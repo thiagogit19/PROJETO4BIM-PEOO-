@@ -1,0 +1,23 @@
+﻿<Window x:Class="Login.MenuAdiminstrador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login"
+        mc:Ignorable="d"
+        Title="MAVMTX" Height="221.311" Width="409.016">
+    <Grid>
+        <GroupBox Header="Menu principal - Administrador" HorizontalAlignment="Left" Height="174" Margin="22,7,0,0" VerticalAlignment="Top" Width="365">
+            <Grid>
+                <Button Content="Torneio" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="156"/>
+                <Button Content="Equipes" HorizontalAlignment="Left" Margin="183,53,0,0" VerticalAlignment="Top" Width="156"/>
+                <Button Content="Jogadores" HorizontalAlignment="Left" Margin="183,124,0,0" VerticalAlignment="Top" Width="156"/>
+                <Button Content="Partidas" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="156"/>
+                <Button Content="Presidente" HorizontalAlignment="Left" Margin="183,89,0,0" VerticalAlignment="Top" Width="156"/>
+                <Button Content="Dados estatísticos" HorizontalAlignment="Left" Margin="183,18,0,0" VerticalAlignment="Top" Width="156"/>
+                <Button Content="Perfil" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="156"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="156" Background="#FFFCBAFF"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
