@@ -1,0 +1,19 @@
+﻿<Window x:Class="Login.JogadorMostrarAtualizar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login"
+        mc:Ignorable="d"
+        Title="MAVMTX" Height="343.033" Width="519.672">
+    <Grid>
+        <GroupBox Header="Jogador" HorizontalAlignment="Left" Height="292" Margin="10,10,0,0" VerticalAlignment="Top" Width="492">
+            <Grid>
+                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="16,18,0,0" VerticalAlignment="Top" Width="93" Height="26"/>
+                <DataGrid HorizontalAlignment="Left" Height="165" Margin="10,59,0,0" VerticalAlignment="Top" Width="460"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="357,240,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF"/>
+
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

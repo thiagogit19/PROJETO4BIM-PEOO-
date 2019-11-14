@@ -55,7 +55,48 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EquipesAdm.xaml.cs">
+      <DependentUpon>EquipesAdm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InserirPresidente.xaml.cs">
+      <DependentUpon>InserirPresidente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="JogadorAdm.xaml.cs">
+      <DependentUpon>JogadorAdm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="JogadorMostrarAtualizar.xaml.cs">
+      <DependentUpon>JogadorMostrarAtualizar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartidasCadastrar.xaml.cs">
+      <DependentUpon>PartidasCadastrar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TorneioAdm.xaml.cs">
+      <DependentUpon>TorneioAdm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TorneioMostrar.xaml.cs">
+      <DependentUpon>TorneioMostrar.xaml</DependentUpon>
+    </Compile>
     <Page Include="DadosEstatísticos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EquipesAdm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EquipesMostrar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InserirPresidente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JogadorAdm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JogadorMostrarAtualizar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -69,6 +110,9 @@
     </Compile>
     <Compile Include="DadosEstatísticos.xaml.cs">
       <DependentUpon>DadosEstatísticos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EquipesMostrar.xaml.cs">
+      <DependentUpon>EquipesMostrar.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -86,6 +130,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PartidasCadastrar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PartidasMostrar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PerfilAdministrador.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -95,6 +147,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PerfilPresidente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TorneioAdm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TorneioMostrar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,6 +168,9 @@
     </Compile>
     <Compile Include="MenuPresidente.xaml.cs">
       <DependentUpon>MenuPresidente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartidasMostrar.xaml.cs">
+      <DependentUpon>PartidasMostrar.xaml</DependentUpon>
     </Compile>
     <Compile Include="PerfilAdministrador.xaml.cs">
       <DependentUpon>PerfilAdministrador.xaml</DependentUpon>

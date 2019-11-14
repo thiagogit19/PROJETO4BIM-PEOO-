@@ -1,0 +1,17 @@
+﻿<Window x:Class="Login.EquipesMostrar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login"
+        mc:Ignorable="d"
+        Title="MAVMTX" Height="333.811" Width="535.617">
+    <Grid>
+        <GroupBox Header="Equipes do Torneio" HorizontalAlignment="Left" Height="283" Margin="10,10,0,0" VerticalAlignment="Top" Width="509">
+            <Grid>
+                <DataGrid HorizontalAlignment="Left" Height="217" Margin="10,10,0,0" VerticalAlignment="Top" Width="472"/>
+                <Button Content="Voltar" Margin="364,232,15,6" Background="#FFFCBAFF"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
