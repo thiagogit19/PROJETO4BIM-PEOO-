@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="221.311" Width="409.016">
+        Title="MAVMTX" Height="230.424" Width="412.921">
     <Grid>
         <GroupBox Header="Menu principal - Administrador" HorizontalAlignment="Left" Height="174" Margin="22,7,0,0" VerticalAlignment="Top" Width="365">
             <Grid>
@@ -16,7 +16,7 @@
                 <Button Content="Presidente" HorizontalAlignment="Left" Margin="183,89,0,0" VerticalAlignment="Top" Width="156"/>
                 <Button Content="Dados estatísticos" HorizontalAlignment="Left" Margin="183,18,0,0" VerticalAlignment="Top" Width="156"/>
                 <Button Content="Perfil" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="156"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="156" Background="#FFFCBAFF"/>
+                <Button Content="Logout" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="156" Background="#FFDDDDDD"/>
             </Grid>
         </GroupBox>
     </Grid>

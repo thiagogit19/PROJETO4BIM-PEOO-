@@ -5,19 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="193.648" Width="551.025">
+        Title="MAVMTX" Height="265.648" Width="551.025">
     <Grid Margin="0,0,2,8">
-        <GroupBox Header="Perfil - Presidente" HorizontalAlignment="Left" Height="147" Margin="20,1,0,0" VerticalAlignment="Top" Width="502">
-            <Grid Margin="0,0,-12,-4">
+        <GroupBox Header="Perfil - Presidente" HorizontalAlignment="Left" Height="220" Margin="20,1,0,0" VerticalAlignment="Top" Width="502">
+            <Grid Margin="0,0,-12,-12">
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Margin="11,4,0,0" Height="23" Width="64" FontSize="14"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="92,4,0,0" IsReadOnly="True"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top" Margin="266,4,0,0" Height="23" Width="80" FontSize="14"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="364,4,0,0" IsReadOnly="True"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="112,4,0,0" IsReadOnly="True"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top" Margin="11,86,0,0" Height="23" Width="80" FontSize="14" RenderTransformOrigin="0.35,0.478"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="112,86,0,0" IsReadOnly="True"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Margin="10,47,0,0" Height="23" Width="65" FontSize="14"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="92,47,0,0" IsReadOnly="True"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fone:" VerticalAlignment="Top" Margin="266,47,0,0" Height="23" Width="40" FontSize="14"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="364,47,0,0" IsReadOnly="True"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="11,89,0,0" Background="#FFFCBAFF"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="112,47,0,0" IsReadOnly="True"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fone:" VerticalAlignment="Top" Margin="11,129,0,0" Height="23" Width="40" FontSize="14"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="112,129,0,0" IsReadOnly="True"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="11,172,0,0" Background="#FFFCBAFF"/>
+                <Image HorizontalAlignment="Left" Height="144" VerticalAlignment="Top" Width="144" Margin="313,10,0,0"/>
+
             </Grid>
         </GroupBox>
 

@@ -14,7 +14,7 @@
                 <Button Content="Partidas" HorizontalAlignment="Left" Margin="14,138,0,0" VerticalAlignment="Top" Width="241"/>
                 <Button Content="Dados estatísticos" HorizontalAlignment="Left" Margin="14,44,0,0" VerticalAlignment="Top" Width="241"/>
                 <Button Content="Perfil" HorizontalAlignment="Left" Margin="14,12,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click_4" />
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="14,196,0,-33" VerticalAlignment="Top" Width="241" Background="#FFFCBAFF"/>
+                <Button Content="Logout" HorizontalAlignment="Left" Margin="14,196,0,-33" VerticalAlignment="Top" Width="241" Background="#FFDDDDDD"/>
                 <Button Content="Dados do torneio" HorizontalAlignment="Left" Margin="14,76,0,0" VerticalAlignment="Top" Width="241"/>
             </Grid>
         </GroupBox>

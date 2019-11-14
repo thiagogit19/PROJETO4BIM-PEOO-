@@ -9,7 +9,7 @@
     <Grid>
         <GroupBox Header="Dados estastisticos" HorizontalAlignment="Left" Height="276" Margin="12,6,0,0" VerticalAlignment="Top" Width="437">
             <Grid>
-                <DataGrid HorizontalAlignment="Left" Height="211" Margin="10,2,0,0" VerticalAlignment="Top" Width="385"/>
+                <DataGrid HorizontalAlignment="Left" Height="211" Margin="10,7,0,0" VerticalAlignment="Top" Width="385"/>
                 <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="10,225,0,0" Background="#FFFCBAFF"/>
 
             </Grid>
