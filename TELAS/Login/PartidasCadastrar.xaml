@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="414.564" Width="618.34">
+         Title="MAVMTX" Height="414.564" Width="618.34">
     <Grid>
         <GroupBox Header="Partidas" HorizontalAlignment="Left" Height="364" Margin="10,10,0,0" VerticalAlignment="Top" Width="590">
             <Grid>
@@ -22,7 +22,7 @@
                 <Button Content="Inserir" HorizontalAlignment="Left" Margin="18,279,0,0" VerticalAlignment="Top" Width="100"/>
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="191,279,0,0" VerticalAlignment="Top" Width="105"/>
                 <DataGrid HorizontalAlignment="Left" Height="277" Margin="323,20,0,0" VerticalAlignment="Top" Width="237"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="447,317,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="447,317,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Click"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="18,317,0,0" VerticalAlignment="Top" Width="100"/>
                 <Button Content="Deletar" HorizontalAlignment="Left" Margin="191,317,0,0" VerticalAlignment="Top" Width="105"/>
 

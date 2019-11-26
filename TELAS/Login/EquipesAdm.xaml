@@ -18,7 +18,7 @@
                 <Button Content="Inserir" HorizontalAlignment="Left" Margin="29,179,0,0" VerticalAlignment="Top" Width="75"/>
                 <DataGrid HorizontalAlignment="Left" Height="181" Margin="274,25,0,0" VerticalAlignment="Top" Width="311"/>
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="153,179,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="472,217,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="472,217,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="29,217,0,0" VerticalAlignment="Top" Width="75"/>
                 <Button Content="Deletar" HorizontalAlignment="Left" Margin="153,217,0,0" VerticalAlignment="Top" Width="75"/>
 

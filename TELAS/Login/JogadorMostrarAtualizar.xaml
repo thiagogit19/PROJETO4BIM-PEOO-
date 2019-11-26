@@ -11,7 +11,7 @@
             <Grid>
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="16,18,0,0" VerticalAlignment="Top" Width="93" Height="26"/>
                 <DataGrid HorizontalAlignment="Left" Height="165" Margin="10,59,0,0" VerticalAlignment="Top" Width="460"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="357,240,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="357,240,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
 
             </Grid>
         </GroupBox>

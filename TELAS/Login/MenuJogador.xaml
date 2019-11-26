@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="225.922" Width="200">
+       Title="MAVMTX" Height="225.922" Width="200">
     <Grid>
         <GroupBox Header="Menu principal - Jogador" HorizontalAlignment="Left" Height="174" VerticalAlignment="Top" Width="176" Margin="8,10,0,0">
             <Grid>
-                <Button Content="Perfil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,20,0,0" Height="29"/>
-                <Button Content="Dados estatísticos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,64,0,0" Height="29"/>
-                <Button Content="Logout" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,109,0,0" Height="29"/>
+                <Button Content="Perfil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,20,0,0" Height="29" Click="Button_Perfil"/>
+                <Button Content="Dados estatísticos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,64,0,0" Height="29" Click="Button_DadosEstatisticos"/>
+                <Button Content="Logout" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,109,0,0" Height="29" Click="Button_Logout"/>
             </Grid>
         </GroupBox>
     </Grid>

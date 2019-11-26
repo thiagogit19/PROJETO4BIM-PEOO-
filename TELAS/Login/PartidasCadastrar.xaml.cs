@@ -23,5 +23,11 @@ namespace Login
         {
             InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MenuAdiminstrador x = new MenuAdiminstrador();
+            Close();
+            x.Show();
+        }
     }
 }

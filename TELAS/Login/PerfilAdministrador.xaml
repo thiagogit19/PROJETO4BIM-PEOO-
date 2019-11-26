@@ -17,7 +17,7 @@
                 <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,55,0,0" IsReadOnly="True"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fone:" VerticalAlignment="Top" Margin="11,142,0,0" Height="23" Width="40" FontSize="14"/>
                 <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,142,0,0" IsReadOnly="True"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="11,183,0,0" Background="#FFFCBAFF"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="11,183,0,0" Background="#FFFCBAFF" Click="Button_Voltar"/>
                 <Image HorizontalAlignment="Left" Height="144" VerticalAlignment="Top" Width="144" Margin="307,21,0,0"/>
 
             </Grid>

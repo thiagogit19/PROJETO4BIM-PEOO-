@@ -23,5 +23,12 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void Button_Voltar(object sender, RoutedEventArgs e)
+        {
+            MenuPresidente x = new MenuPresidente();
+            Close();
+            x.Show();
+        }
     }
 }

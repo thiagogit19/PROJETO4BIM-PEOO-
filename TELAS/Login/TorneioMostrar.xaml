@@ -10,7 +10,7 @@
         <GroupBox Header="Torneio" HorizontalAlignment="Left" Height="262" VerticalAlignment="Top" Width="299" Margin="8,10,0,0">
             <Grid>
 
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="164,210,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="164,210,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Administrador"/><Run Text=": "/></TextBlock>
                 <TextBox HorizontalAlignment="Left" Height="23" Margin="157,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" Text="País:" VerticalAlignment="Top"/>

@@ -23,5 +23,20 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        ModJogador j;
+
+        private void Button_Voltar(object sender, RoutedEventArgs e)
+        {
+            MenuAdiminstrador x = new MenuAdiminstrador();
+            Close();
+            x.Show();
+        }
+
+        private void Button_Inserir(object sender, RoutedEventArgs e)
+        {
+            j = new ModJogador(nometxt, emailtxt, fonetxt, nasctxt, numcatxt, posicaotxt, );
+
+        }
     }
 }

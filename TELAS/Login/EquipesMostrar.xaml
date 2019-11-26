@@ -10,7 +10,7 @@
         <GroupBox Header="Equipes do Torneio" HorizontalAlignment="Left" Height="283" Margin="10,10,0,0" VerticalAlignment="Top" Width="509">
             <Grid>
                 <DataGrid HorizontalAlignment="Left" Height="217" Margin="10,10,0,0" VerticalAlignment="Top" Width="472"/>
-                <Button Content="Voltar" Margin="364,232,15,6" Background="#FFFCBAFF"/>
+                <Button Content="Voltar" Margin="364,232,15,6" Background="#FFFCBAFF" Click="Button_Voltar"/>
             </Grid>
         </GroupBox>
     </Grid>

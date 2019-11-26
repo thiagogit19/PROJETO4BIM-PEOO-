@@ -23,5 +23,30 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void Button_Voltar(object sender, RoutedEventArgs e)
+        {
+            MenuJogador j = new MenuJogador();
+            MenuAdiminstrador a = new MenuAdiminstrador();
+            MenuPresidente p = new MenuPresidente();
+            if (j.jog == true)
+            {
+                Close();
+                j.Show();
+                j.jog = false;
+            }
+            else if (a.adm == true)
+            {
+                Close();
+                a.Show();
+                a.adm = false;
+            }
+            else if (p.pre == true)
+            {
+                Close();
+                p.Show();
+                p.pre = false;
+            }
+        }
     }
 }

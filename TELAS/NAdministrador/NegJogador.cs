@@ -3,33 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MJogador;
+using PJogador;
 
 namespace NAdministrador
 {
     public class NegJogador
     {
-        private List<Jogador> v = new List<Jogador>();
-        private PJogador p;
+        private List<ModJogador> v = new List<ModJogador>();
+        private PerJogador p;
 
-        public void InsertJogador(Jogador x)
+        public void InsertJogador(ModJogador x)
         {
             v.Add(x);
         }
 
-        public List<Jogador> SelectJogador()
+        public List<ModJogador> SelectJogador()
         {
-            p = new PJogador();
-            return p.Open().v.ToList();
+            p = new PerJogador();
+            return p.Open().OrderBy(ModJogador => ModJogador.QuantGols).ToList(); // artilheiro
         }
 
-        public void UpdateJogador(Jogador x)
+        public void UpdateJogador(ModJogador x)
         {
-            p = new PJogador();
-            List<PJogador> up = p.Open();
+            p = new PerJogador();
+            List<ModJogador> up = p.Open();
 
             for (int i = 0; i < up.Count; i++)
             {
-                if (up[i].GetID() == x.GetID())
+                if (up[i].GetId() == x.GetId())
                 {
                     up.RemoveAt(i); break;
                 }
@@ -38,12 +40,12 @@ namespace NAdministrador
             p.Save(up);
         }
 
-        public void DeleteJogador(Jogador x)
+        public void DeleteJogador(ModJogador x)
         {
-            p = new PJogador();
-            List<Jogador> del = p.Open();
+            p = new PerJogador();
+            List<ModJogador> del = p.Open();
             for (int i = 0; i < del.Count; i++)
-                if (del[i].GetID() == x.GetID())
+                if (del[i].IdEquipe == x.IdEquipe)
                 {
                     del.RemoveAt(i);
                     break;

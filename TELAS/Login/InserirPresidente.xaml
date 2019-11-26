@@ -18,9 +18,9 @@
                 <TextBox HorizontalAlignment="Left" Height="23" Margin="119,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,166,0,0" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top"/>
                 <TextBox HorizontalAlignment="Left" Height="23" Margin="119,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="98"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="98" Click="Insert_Presidente"/>
                 <DataGrid HorizontalAlignment="Left" Height="235" Margin="278,12,0,0" VerticalAlignment="Top" Width="259"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="424,263,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="424,263,0,10" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
                 <Button Content="Deletar" HorizontalAlignment="Left" Margin="126,263,0,0" VerticalAlignment="Top" Width="113"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="10,263,0,0"/>
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="126,221,0,0" VerticalAlignment="Top" Width="113"/>
