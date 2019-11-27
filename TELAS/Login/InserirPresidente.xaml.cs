@@ -32,6 +32,7 @@ namespace Login
         }
 
         NegPresidente
+
         private void Insert_Presidente(object sender, RoutedEventArgs e)
         {
 

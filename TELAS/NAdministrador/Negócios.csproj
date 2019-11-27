@@ -49,13 +49,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MJogador\MJogador.csproj">
-      <Project>{f18471dc-8dfb-415a-8d76-65ef01fe53ef}</Project>
-      <Name>MJogador</Name>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{63e89397-4c55-4c55-8488-005db7e0cd4b}</Project>
+      <Name>Modelo</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PJogador\PJogador.csproj">
-      <Project>{8430e209-d1c5-4fa0-9ee0-2b1eab333850}</Project>
-      <Name>PJogador</Name>
+    <ProjectReference Include="..\Persistência\Persistência.csproj">
+      <Project>{601a60a8-c498-4406-a412-3484ba3692c8}</Project>
+      <Name>Persistência</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

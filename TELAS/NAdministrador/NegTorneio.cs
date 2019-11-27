@@ -32,18 +32,5 @@ namespace NAdministrador
             up.Add(x);
             p.Save(up);
         }
-
-        public void DeleteTorneio(Torneio x)
-        {
-            p = new PTorneio();
-            List<Torneio> del = p.Open();
-            for (int i = 0; i < del.Count; i++)
-                if (del[i].GetID() == x.GetID())
-                {
-                    del.RemoveAt(i);
-                    break;
-                }
-            p.Save(del);
-        }
     }
 }

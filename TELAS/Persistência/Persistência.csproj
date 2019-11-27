@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8430E209-D1C5-4FA0-9EE0-2B1EAB333850}</ProjectGuid>
+    <ProjectGuid>{601A60A8-C498-4406-A412-3484BA3692C8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PJogador</RootNamespace>
-    <AssemblyName>PJogador</AssemblyName>
+    <RootNamespace>Persistência</RootNamespace>
+    <AssemblyName>Persistência</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,8 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PerEquipe.cs" />
     <Compile Include="PerJogador.cs" />
+    <Compile Include="PerJogo.cs" />
+    <Compile Include="PerPresidente.cs" />
+    <Compile Include="PerTorneio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{63e89397-4c55-4c55-8488-005db7e0cd4b}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

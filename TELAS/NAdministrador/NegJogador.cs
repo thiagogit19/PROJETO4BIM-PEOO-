@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MJogador;
-using PJogador;
+using Modelo;
+using Persistência;
 
 namespace NAdministrador
 {
@@ -21,7 +21,7 @@ namespace NAdministrador
         public List<ModJogador> SelectJogador()
         {
             p = new PerJogador();
-            return p.Open().OrderBy(ModJogador => ModJogador.QuantGols).ToList(); // artilheiro
+            return p.Open().OrderBy(ModJogador => ModJogador.QuantidadeGols()).ToList(); // artilheiro
         }
 
         public void UpdateJogador(ModJogador x)
@@ -45,7 +45,7 @@ namespace NAdministrador
             p = new PerJogador();
             List<ModJogador> del = p.Open();
             for (int i = 0; i < del.Count; i++)
-                if (del[i].IdEquipe == x.IdEquipe)
+                if (del[i].GetId() == x.GetId())
                 {
                     del.RemoveAt(i);
                     break;

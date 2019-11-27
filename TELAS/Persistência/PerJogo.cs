@@ -5,28 +5,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-using MJogador;
+using Modelo;
 
-namespace PJogador
+namespace Persistência
 {
-    public class PerJogador
+    public class PerJogo
     {
-        private string arquivo = "Lista_de_jogadores.xml";
+        private string arquivo = "Lista_de_jogos.xml";
 
-        public List<ModJogador> Open()
+        public List<ModJogo> Open()
         {
-            XmlSerializer x = new XmlSerializer(typeof(List<ModJogador>));
+            XmlSerializer x = new XmlSerializer(typeof(List<ModJogo>));
             StreamReader f = null;
-            List<ModJogador> list = null;
+            List<ModJogo> list = null;
 
             try
             {
                 f = new StreamReader(arquivo, Encoding.Default);
-                list = x.Deserialize(f) as List<ModJogador>;
+                list = x.Deserialize(f) as List<ModJogo>;
             }
             catch
             {
-                list = new List<ModJogador>();
+                list = new List<ModJogo>();
             }
             finally
             {
@@ -35,9 +35,9 @@ namespace PJogador
             return list;
         }
 
-        public void Save(List<ModJogador> g)
+        public void Save(List<ModJogo> g)
         {
-            XmlSerializer x = new XmlSerializer(typeof(List<ModJogador>));
+            XmlSerializer x = new XmlSerializer(typeof(List<ModJogo>));
             StreamWriter f = new StreamWriter(arquivo, false, Encoding.Default);
             x.Serialize(f, g);
             f.Close();

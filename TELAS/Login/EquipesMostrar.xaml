@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="333.811" Width="535.617">
+        Title="MAVMTX" Height="710.051" Width="535.617">
     <Grid>
         <GroupBox Header="Equipes do Torneio" HorizontalAlignment="Left" Height="283" Margin="10,10,0,0" VerticalAlignment="Top" Width="509">
             <Grid>
@@ -13,5 +13,18 @@
                 <Button Content="Voltar" Margin="364,232,15,6" Background="#FFFCBAFF" Click="Button_Voltar"/>
             </Grid>
         </GroupBox>
+
+
+
+        <GroupBox Header="Jogadores da equipe" HorizontalAlignment="Left" Height="283" Margin="10,368,0,0" VerticalAlignment="Top" Width="509">
+            <Grid>
+                <DataGrid HorizontalAlignment="Left" Height="217" Margin="10,10,0,0" VerticalAlignment="Top" Width="472"/>
+                <Button Content="Voltar" Margin="364,232,15,6" Background="#FFFCBAFF" Click="Button_Voltar"/>
+            </Grid>
+        </GroupBox>
+
+        <TextBlock Text="Time (ID):" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="44,320,0,0" Height="23" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="203,320,0,0"/>
+        <Button Content="Listar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Margin="359,320,0,0" Height="23" Click="Button_ListarJogadoresTime"/>
     </Grid>
 </Window>
