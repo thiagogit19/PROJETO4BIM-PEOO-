@@ -10,24 +10,24 @@
         <GroupBox Header="Partidas" HorizontalAlignment="Left" Height="364" Margin="326,10,0,0" VerticalAlignment="Top" Width="590">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" Margin="19,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Primeiro "/><Run Text="Time (ID):"/></TextBlock>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="176,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="176,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="id1txt" HorizontalAlignment="Left" Height="23" Margin="176,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="id2txt" HorizontalAlignment="Left" Height="23" Margin="176,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="19,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Segundo Tim"/><Run Text="e"/><Run Text=" (ID):"/></TextBlock>
                 <TextBlock HorizontalAlignment="Left" Margin="19,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Gols do P"/><Run Text="r"/><Run Text="i"/><Run Text="meiro Time:"/></TextBlock>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="175,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="gol1txt" HorizontalAlignment="Left" Height="23" Margin="175,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="19,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Gols d"/><Run Text="o "/><Run Text="Segundo Time:"/></TextBlock>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="176,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="gol2txt" HorizontalAlignment="Left" Height="23" Margin="176,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="19,243,0,0" TextWrapping="Wrap" Text="Local:" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="175,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="18,279,0,0" VerticalAlignment="Top" Width="100"/>
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="191,279,0,0" VerticalAlignment="Top" Width="105"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="447,317,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Click"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="18,317,0,0" VerticalAlignment="Top" Width="100"/>
-                <Button Content="Deletar" HorizontalAlignment="Left" Margin="191,317,0,0" VerticalAlignment="Top" Width="105"/>
-                <DataGrid HorizontalAlignment="Left" Height="277" Margin="323,22,0,0" VerticalAlignment="Top" Width="237"/>
+                <TextBox x:Name="localtxt" HorizontalAlignment="Left" Height="23" Margin="175,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="18,279,0,0" VerticalAlignment="Top" Width="100" Click="Button_Inserir"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="191,279,0,0" VerticalAlignment="Top" Width="105" Click="Button_Listar"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="447,317,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="18,317,0,0" VerticalAlignment="Top" Width="100" Click="Button_Atualizar"/>
+                <Button Content="Deletar" HorizontalAlignment="Left" Margin="191,317,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click"/>
+                <ListBox x:Name="listarpartidas" HorizontalAlignment="Left" Height="277" Margin="323,22,0,0" VerticalAlignment="Top" Width="237"/>
             </Grid>
         </GroupBox>
-        <DataGrid HorizontalAlignment="Left" Height="277" Margin="39,79,0,0" VerticalAlignment="Top" Width="237"/>
+        <DataGrid x:Name="listarequipes" HorizontalAlignment="Left" Height="277" Margin="39,79,0,0" VerticalAlignment="Top" Width="237"/>
         <TextBlock Text="Lista de equipes" HorizontalAlignment="Left" Margin="39,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" FontSize="18"/>
 
     </Grid>

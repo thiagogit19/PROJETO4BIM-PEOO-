@@ -13,6 +13,11 @@ namespace Modelo
           
         }
 
+        public override int GetId()
+        {
+            return Id;
+        }
+
         public override string ToString()
         {
             return $"{base.GetNome()} -- {base.GetEmail()} -- {base.GetFone()} -- {base.GetFoto()} -- {base.GetId()} -- {base.GetNascimento()}";

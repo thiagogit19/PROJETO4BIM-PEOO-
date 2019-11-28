@@ -10,24 +10,24 @@ namespace NAdministrador
 {
     public class NegEquipe
     {
-        private List<Equipe> v = new List<Equipe>();
-        private PEquipe p;
+        private List<ModEquipe> v = new List<ModEquipe>();
+        private PerEquipe p;
 
-        public void InsertEquipe(Equipe x)
+        public void InsertEquipe(ModEquipe x)
         {
             v.Add(x);
         }
 
-        public List<Equipe> SelectEquipe()
+        public List<ModEquipe> SelectEquipe()
         {
-            p = new PEquipe();
-            return p.Open().v.ToList();
+            p = new PerEquipe();
+            return p.Open().OrderBy(ModEquipe => ModEquipe.GetID()).ToList();
         }
 
-        public void UpdateEquipe(Equipe x)
+        public void UpdateEquipe(ModEquipe x)
         {
-            p = new PEquipe();
-            List<Equipe> up = p.Open();
+            p = new PerEquipe();
+            List<ModEquipe> up = p.Open();
 
             for (int i = 0; i < up.Count; i++)
             {
@@ -41,10 +41,10 @@ namespace NAdministrador
             p.Save(up);
         }
 
-        public void DeleteEquipe(Equipe x)
+        public void DeleteEquipe(ModEquipe x)
         {
-            p = new PEquipe();
-            List<Equipe> del = p.Open();
+            p = new PerEquipe();
+            List<ModEquipe> del = p.Open();
             for (int i = 0; i < del.Count; i++)
                 if (del[i].GetID() == x.GetID())
                 {

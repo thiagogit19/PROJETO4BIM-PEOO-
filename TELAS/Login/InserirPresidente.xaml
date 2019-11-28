@@ -5,29 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="613.734" Width="586.988">
+        Title="MAVMTX" Height="677.634" Width="586.988">
     <Grid>
-        <GroupBox Header="Administrar Presidentes" HorizontalAlignment="Left" Height="315" Margin="10,10,0,0" VerticalAlignment="Top" Width="559">
+        <GroupBox Header="Administrar Presidentes" HorizontalAlignment="Left" Height="370" Margin="10,10,0,0" VerticalAlignment="Top" Width="559">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" Margin="109,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="119,12,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="nomepretxt" HorizontalAlignment="Left" Height="23" Margin="119,12,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="119,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="emailpretxt" HorizontalAlignment="Left" Height="23" Margin="119,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,111,0,0" TextWrapping="Wrap" Text="Fone:" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="119,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="fonepretxt" HorizontalAlignment="Left" Height="23" Margin="119,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,166,0,0" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="119,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="98" Click="Insert_Presidente"/>
-                <DataGrid HorizontalAlignment="Left" Height="235" Margin="278,12,0,0" VerticalAlignment="Top" Width="259"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="424,263,0,10" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
-                <Button Content="Deletar" HorizontalAlignment="Left" Margin="126,263,0,0" VerticalAlignment="Top" Width="113"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="10,263,0,0"/>
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="126,221,0,0" VerticalAlignment="Top" Width="113"/>
+                <TextBox x:Name="nascpretxt" HorizontalAlignment="Left" Height="23" Margin="119,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="98" Click="Insert_Presidente"/>
+                <DataGrid HorizontalAlignment="Left" Height="160" Margin="278,135,0,0" VerticalAlignment="Top" Width="259"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="424,316,0,10" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
+                <Button Content="Deletar" HorizontalAlignment="Left" Margin="126,317,0,0" VerticalAlignment="Top" Width="113"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="10,317,0,0"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="126,275,0,0" VerticalAlignment="Top" Width="113"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,230,0,0" TextWrapping="Wrap" Text="Id:" VerticalAlignment="Top"/>
+                <TextBox x:Name="idpretxt" HorizontalAlignment="Left" Height="23" Margin="119,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Image HorizontalAlignment="Left" Height="100" Margin="424,10,0,0" VerticalAlignment="Top" Width="113"/>
 
             </Grid>
         </GroupBox>
-        <GroupBox Header="Listar Presidentes" HorizontalAlignment="Left" Height="243" Margin="10,330,0,0" VerticalAlignment="Top" Width="559">
+        <GroupBox Header="Listar Presidentes" HorizontalAlignment="Left" Height="243" Margin="10,394,0,0" VerticalAlignment="Top" Width="559">
             <DataGrid HorizontalAlignment="Left" Height="207" Margin="10,10,0,0" VerticalAlignment="Top" Width="530"/>
         </GroupBox>
 

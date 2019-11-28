@@ -70,6 +70,9 @@
     <Compile Include="PartidasCadastrar.xaml.cs">
       <DependentUpon>PartidasCadastrar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PerfilAdministrador.xaml.cs">
+      <DependentUpon>PerfilAdministrador.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TorneioAdm.xaml.cs">
       <DependentUpon>TorneioAdm.xaml</DependentUpon>
     </Compile>
@@ -172,9 +175,6 @@
     <Compile Include="PartidasMostrar.xaml.cs">
       <DependentUpon>PartidasMostrar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PerfilAdministrador.xaml.cs">
-      <DependentUpon>PerfilAdministrador.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PerfilJogador.xaml.cs">
       <DependentUpon>PerfilJogador.xaml</DependentUpon>
     </Compile>
@@ -205,6 +205,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{63e89397-4c55-4c55-8488-005db7e0cd4b}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAdministrador\Negócios.csproj">
+      <Project>{7b0e36de-d777-49cc-b2bb-3a26779d4bcc}</Project>
+      <Name>Negócios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

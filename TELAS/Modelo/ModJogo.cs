@@ -22,6 +22,11 @@ namespace Modelo
             Local = local;
         }
 
+        public int GetGolsTotal()
+        {
+            return Gol1 + Gol2;
+        }
+
         public override string ToString()
         {
             return $"{IdEquipe1} -- {IdEquipe2} -- {Gol1} -- {Gol2} -- {Local}";

@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
+using NAdministrador;
 
 namespace Login
 {
@@ -23,6 +25,7 @@ namespace Login
         {
             InitializeComponent();
         }
+        private string foto = string.Empty;
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
@@ -31,10 +34,9 @@ namespace Login
             x.Show();
         }
 
-        NegPresidente
-
         private void Insert_Presidente(object sender, RoutedEventArgs e)
         {
+            ModPresidente x = new ModPresidente(nomepretxt.Text, emailpretxt.Text, fonepretxt.Text, int.Parse(idpretxt.Text), DateTime.Parse(nascpretxt.Text));
 
         }
     }

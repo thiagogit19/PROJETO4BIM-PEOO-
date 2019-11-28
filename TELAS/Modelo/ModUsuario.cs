@@ -9,7 +9,7 @@ namespace Modelo
     public class ModUsuario 
     {
         private string Nome, Email, Fone, Foto;
-        private int Id;
+        protected int Id;
         private DateTime Nascimento;
 
         public ModUsuario(string n, string e, string f, string foto, int i, DateTime d)
@@ -42,7 +42,7 @@ namespace Modelo
         {
             return Foto;
         }
-        public int GetId()
+        public virtual int GetId()
         {
             return Id;
         }

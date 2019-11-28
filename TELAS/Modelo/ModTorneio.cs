@@ -19,6 +19,11 @@ namespace Modelo
             Temporada = t;
         }
 
+        public string GetPais()
+        {
+            return Pais;
+        }
+
         public override string ToString()
         {
             return $"{IdAdm} -- {NUmEquipes} -- {Pais} -- {Temporada}";

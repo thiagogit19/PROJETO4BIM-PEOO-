@@ -3,30 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Modelo;
+using Persistência;
 
 
 namespace NAdministrador
 {
     public class NegPresidente
     {
-        private List<Presidente> v = new List<Presidente>();
-        private PPresidente p;
+        private List<ModPresidente> v = new List<ModPresidente>();
+        private PerPresidente p;
 
-        public void InsertPresidente(Presidente x)
+        public void InsertPresidente(ModPresidente x)
         {
             v.Add(x);
         }
 
-        public List<Presidente> SelectPresidente()
+        public List<ModPresidente> SelectPresidente()
         {
-            p = new PPresidente();
-            return p.Open().v.ToList();
+            p = new PerPresidente();
+            return p.Open().OrderBy(ModPresidente => ModPresidente.GetID()).ToList();
         }
 
-        public void UpdatePresidente(Presidente x)
+        public void UpdatePresidente(ModPresidente x)
         {
-            p = new PPresidente();
-            List<Presidente> up = p.Open();
+            p = new PerPresidente();
+            List<ModPresidente> up = p.Open();
 
             for (int i = 0; i < up.Count; i++)
             {
@@ -40,10 +42,10 @@ namespace NAdministrador
             p.Save(up);
         }
 
-        public void DeletePresidente(Presidente x)
+        public void DeletePresidente(ModPresidente x)
         {
-            p = new PPresidente();
-            List<Presidente> del = p.Open();
+            p = new PerPresidente();
+            List<ModPresidente> del = p.Open();
             for (int i = 0; i < del.Count; i++)
                 if (del[i].GetID() == x.GetID())
                 {

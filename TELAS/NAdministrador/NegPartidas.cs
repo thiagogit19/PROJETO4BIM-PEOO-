@@ -3,33 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Modelo;
+using Persistência;
 
 namespace NAdministrador
 {
     public class NegPartidas
     {
-        private List<Partida> v = new List<Partida>();
-        private PPartida p;
+        private List<ModJogo> v = new List<ModJogo>();
+        private PerJogo p;
 
-        public void InsertPartida(Partida x)
+        public void InsertPartida(ModJogo x)
         {
             v.Add(x);
         }
 
-        public List<Partida> SelectPartida()
+        public List<ModJogo> SelectPartida()
         {
-            p = new PPartida();
-            return p.Open().v.ToList();
+            p = new PerJogo();
+            return p.Open().OrderBy(ModJogo => ModJogo.GetGolsTotal()).ToList();
         }
 
-        public void UpdatePartida(Partida x)
+        public void UpdatePartida(ModJogo x)
         {
-            p = new PPartida();
-            List<Partida> up = p.Open();
+            p = new PerJogo();
+            List<ModJogo> up = p.Open();
 
             for (int i = 0; i < up.Count; i++)
             {
-                if (up[i].GetID() == x.GetID())
+                if (up[i].GetGolsTotal() == x.GetGolsTotal())
                 {
                     up.RemoveAt(i); break;
                 }
@@ -39,12 +41,12 @@ namespace NAdministrador
             p.Save(up);
         }
 
-        public void DeletePartida(Partida x)
+        public void DeletePartida(ModJogo x)
         {
-            p = new PPartida();
-            List<Partida> del = p.Open();
+            p = new PerJogo();
+            List<ModJogo> del = p.Open();
             for (int i = 0; i < del.Count; i++)
-                if (del[i].GetID() == x.GetID())
+                if (del[i].GetGolsTotal() == x.GetGolsTotal())
                 {
                     del.RemoveAt(i);
                     break;

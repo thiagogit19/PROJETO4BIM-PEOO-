@@ -23,6 +23,11 @@ namespace Modelo
             fundacao = f;
         }
 
+        public int GetID()
+        {
+            return Id;
+        }
+
         public override string ToString()
         {
             return $"{Nome} -- {Origem} -- {NumJogadores} -- {Id} -- {IdPresidente} -- {IdTorneio} -- {fundacao}";
