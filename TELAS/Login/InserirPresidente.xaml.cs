@@ -36,7 +36,7 @@ namespace Login
 
         private void Insert_Presidente(object sender, RoutedEventArgs e)
         {
-            ModPresidente x = new ModPresidente(nomepretxt.Text, emailpretxt.Text, fonepretxt.Text, int.Parse(idpretxt.Text), DateTime.Parse(nascpretxt.Text));
+            ModPresidente x = new ModPresidente(nomepretxt.Text, emailpretxt.Text, fonepretxt.Text, foto, int.Parse(idpretxt.Text), DateTime.Parse(nascpretxt.Text));
 
         }
     }

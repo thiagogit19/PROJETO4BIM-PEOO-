@@ -23,7 +23,7 @@
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="191,279,0,0" VerticalAlignment="Top" Width="105" Click="Button_Listar"/>
                 <Button Content="Voltar" HorizontalAlignment="Left" Margin="447,317,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" Margin="18,317,0,0" VerticalAlignment="Top" Width="100" Click="Button_Atualizar"/>
-                <Button Content="Deletar" HorizontalAlignment="Left" Margin="191,317,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click"/>
+                <Button Content="Deletar" HorizontalAlignment="Left" Margin="191,317,0,0" VerticalAlignment="Top" Width="105" />
                 <ListBox x:Name="listarpartidas" HorizontalAlignment="Left" Height="277" Margin="323,22,0,0" VerticalAlignment="Top" Width="237"/>
             </Grid>
         </GroupBox>

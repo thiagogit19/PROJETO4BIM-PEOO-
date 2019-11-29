@@ -25,6 +25,6 @@
 
         <TextBlock Text="Time (ID):" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="44,320,0,0" Height="23" FontSize="14"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="203,320,0,0"/>
-        <Button Content="Listar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Margin="359,320,0,0" Height="23" Click="Button_ListarJogadoresTime"/>
+        <Button Content="Listar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Margin="359,320,0,0" Height="23" />
     </Grid>
 </Window>

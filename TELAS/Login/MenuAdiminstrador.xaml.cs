@@ -53,7 +53,7 @@ namespace Login
 
         private void Button_DadosEstatisticos(object sender, RoutedEventArgs e)
         {
-            adm = true;
+            // adm = true;
             DadosEstatísticos x = new DadosEstatísticos();
             Close();
             x.Show();

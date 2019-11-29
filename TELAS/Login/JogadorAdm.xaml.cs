@@ -24,7 +24,7 @@ namespace Login
             InitializeComponent();
         }
 
-        ModJogador j;
+        //ModJogador j;
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
@@ -35,7 +35,7 @@ namespace Login
 
         private void Button_Inserir(object sender, RoutedEventArgs e)
         {
-            j = new ModJogador(nometxt, emailtxt, fonetxt, nasctxt, numcatxt, posicaotxt, );
+            //j = new ModJogador(nometxt, emailtxt, fonetxt, nasctxt, numcatxt, posicaotxt, );
 
         }
     }
