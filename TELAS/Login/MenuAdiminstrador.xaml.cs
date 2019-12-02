@@ -24,6 +24,8 @@ namespace Login
             InitializeComponent();
         }
 
+        public bool adm = false;
+
         private void Button_PerfilAdm(object sender, RoutedEventArgs e)
         {
             PerfilAdministrador x = new PerfilAdministrador();
@@ -54,7 +56,7 @@ namespace Login
         private void Button_DadosEstatisticos(object sender, RoutedEventArgs e)
         {
             // adm = true;
-            DadosEstatísticos x = new DadosEstatísticos();
+            DadosEstatísticos x = new DadosEstatísticos(adm);
             Close();
             x.Show();
         }

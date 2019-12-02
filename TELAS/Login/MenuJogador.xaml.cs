@@ -37,7 +37,7 @@ namespace Login
         private void Button_DadosEstatisticos(object sender, RoutedEventArgs e)
         {
             jog = true;
-            DadosEstatísticos x = new DadosEstatísticos();
+            DadosEstatísticos x = new DadosEstatísticos(jog);
             Close();
             x.Show();
         }
