@@ -48,15 +48,14 @@ namespace NAdministrador
             p.Save(up);
         }
 
-        public void DeletePresidente(ModPresidente x)
+        public void DeletePresidente(ModPresidente c)
         {
-
-            ModPresidente c = new ModPresidente();
-            c.Id = int.Parse(idpretxt.Text);
-            NegPresidente n = new NegPresidente();
-            n.DeletePresidente(c);
-            listagem.ItemsSource = null;
-            listagem.ItemsSource = n.SelectPresidente();
+            p = new PerPresidente();
+            List<ModPresidente> cs = p.Open();
+            ModPresidente r = cs.Where(x => x.Id == c.Id).Single();
+            cs.Remove(r);
+            p.Save(cs);
+            
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="813.634" Width="586.988">
+        Title="MAVMTX" Height="813.634" Width="743.988">
     <Grid>
         <GroupBox Header="Administrar Presidentes" HorizontalAlignment="Left" Height="423" Margin="10,10,0,0" VerticalAlignment="Top" Width="559">
             <Grid>
@@ -21,8 +21,6 @@
                 <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" Width="98" Click="Insert_Presidente"/>
                 <ListBox x:Name="listarequipes" HorizontalAlignment="Left" Height="160" Margin="278,191,0,0" VerticalAlignment="Top" Width="259"/>
                 <Button Content="Voltar" HorizontalAlignment="Left" Margin="424,363,0,13" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
-                <Button Content="Deletar" HorizontalAlignment="Left" Margin="358,448,0,-67" VerticalAlignment="Top" Width="113" Click="Button_Deletar"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="70,365,0,0" Click="Button_Atualizar"/>
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="126,331,0,0" VerticalAlignment="Top" Width="113" Click="Button_Listar"/>
                 <Image x:Name="image" HorizontalAlignment="Left" Height="115" Margin="358,12,0,0" VerticalAlignment="Top" Width="130"/>
                 <Button Content="Escolher foto" HorizontalAlignment="Left" Margin="381,141,0,0" VerticalAlignment="Top" Width="75" Click="FotoClick"/>
@@ -34,15 +32,26 @@
             </Grid>
         </GroupBox>
 
-        <GroupBox Header="Deletar" HorizontalAlignment="Left" Height="64" Margin="10,445,0,0" VerticalAlignment="Top" Width="559">
+        <GroupBox Header="Deletar" HorizontalAlignment="Left" Height="64" Margin="10,445,0,0" VerticalAlignment="Top" Width="321">
             <Grid>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="23,16,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Margin="23,16,0,0"/>
+                <TextBox x:Name="idpretxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="80,10,0,0" RenderTransformOrigin="0.233,0.609"/>
+                <Button Content="Deletar" HorizontalAlignment="Left" Margin="223,10,0,0" VerticalAlignment="Top" Width="76" Click="Button_Deletar"/>
 
             </Grid>
         </GroupBox>
 
         <GroupBox Header="Listar Presidentes" HorizontalAlignment="Left" Height="243" Margin="10,514,0,0" VerticalAlignment="Top" Width="559">
-            <ListBox x:Name="listagem" HorizontalAlignment="Left" Height="207" Margin="10,10,0,0" VerticalAlignment="Top" Width="530"/>
+            <ListBox x:Name="listapre" HorizontalAlignment="Left" Height="207" Margin="10,10,0,0" VerticalAlignment="Top" Width="530"/>
+        </GroupBox>
+        <GroupBox Header="Atualizar" HorizontalAlignment="Left" Height="64" Margin="355,445,0,0" VerticalAlignment="Top" Width="321">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Margin="23,16,0,0"/>
+                <TextBox x:Name="idpretxt2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="68,11,0,0" RenderTransformOrigin="0.233,0.609"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="206,11,0,0" Click="Button_Atualizar"/>
+
+
+            </Grid>
         </GroupBox>
 
     </Grid>

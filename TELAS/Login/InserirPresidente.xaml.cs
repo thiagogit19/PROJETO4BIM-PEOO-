@@ -38,8 +38,8 @@ namespace Login
         private void SelectClick(object sender, RoutedEventArgs e)
         {
             NegPresidente m = new NegPresidente();
-            listagem.ItemsSource = null;
-            listagem.ItemsSource = m.SelectPresidente();
+            listapre.ItemsSource = null;
+            listapre.ItemsSource = m.SelectPresidente();
         }
 
         private void Insert_Presidente(object sender, RoutedEventArgs e)
@@ -90,14 +90,14 @@ namespace Login
         private void Button_Listar(object sender, RoutedEventArgs e)
         {
             NegPresidente x = new NegPresidente();
-            listagem.ItemsSource = null;
-            listagem.ItemsSource = x.SelectPresidente();
+            listapre.ItemsSource = null;
+            listapre.ItemsSource = x.SelectPresidente();
         }
 
         private void Button_Atualizar(object sender, RoutedEventArgs e)
         {
             ModPresidente x = new ModPresidente();
-            x.Id = int.Parse(idpretxt.Text);
+            x.Id = int.Parse(idpretxt2.Text);
             x.Nome = nomepretxt.Text;
             x.Fone = fonepretxt.Text;
             x.Email = emailpretxt.Text;
@@ -115,8 +115,8 @@ namespace Login
             c.Id = int.Parse(idpretxt.Text);
             NegPresidente n = new NegPresidente();
             n.DeletePresidente(c);
-            listagem.ItemsSource = null;
-            listagem.ItemsSource = n.SelectPresidente();
+            listapre.ItemsSource = null;
+            listapre.ItemsSource = n.SelectPresidente();
         }
 
     }
