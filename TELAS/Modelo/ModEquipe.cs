@@ -8,29 +8,12 @@ namespace Modelo
 {
     public class ModEquipe 
     {
-        private string Nome, Origem;
-        private int NumJogadores, Id, IdPresidente, IdTorneio;
-        private DateTime fundacao;
-
-        public ModEquipe(string n,string o,int num,int idc,int idp,int idt,DateTime f)
-        {
-            Nome = n;
-            Origem = o;
-            NumJogadores = num;
-            Id = idc;
-            IdPresidente = idp;
-            IdTorneio = idt;
-            fundacao = f;
-        }
-
-        public int GetID()
-        {
-            return Id;
-        }
-
-        public override string ToString()
-        {
-            return $"{Nome} -- {Origem} -- {NumJogadores} -- {Id} -- {IdPresidente} -- {IdTorneio} -- {fundacao}";
-        }
+        public string Origem { get; set; }
+        public string Nome { get; set; }
+        public int NumJogador { get; set; }
+        public int Id { get; set; }
+        public int IdPresidente { get; set; }
+        public int IdTorneio { get; set; }
+        public DateTime Fundacao { get; set; }
     }
 }

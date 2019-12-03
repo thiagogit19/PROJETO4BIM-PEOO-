@@ -32,12 +32,5 @@ namespace Login
             x.Show();
         }
 
-        private void Button_Inserir(object sender, RoutedEventArgs e)
-        {
-            ModAdm m = new ModAdm("Carlos", "Carlos@email.com", "87432164", "cara.jpeg", 123, DateTime.Parse("01/01/1997"));
-            ModTorneio x = new ModTorneio(m.GetId(), 20, paistxt.Text, temporadatxt.Text);
-            NegTorneio y = new NegTorneio();
-            y.InsertTorneio(x);
-        }
     }
 }

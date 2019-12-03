@@ -8,19 +8,9 @@ namespace Modelo
 {
     public class ModPresidente : ModUsuario
     {
-        public ModPresidente(string Nome, string Email, string Fone, string Foto, int Id, DateTime Nascimento) : base(Nome, Email, Fone, Foto, Id, Nascimento)
-        {
-
-        }
-
-        public int GetID()
-        {
-            return Id;
-        }
-
         public override string ToString()
         {
-            return $"{base.GetNome()} -- {base.GetEmail()} -- {base.GetFone()} -- {base.GetFoto()} -- {base.GetId()} -- {base.GetNascimento()}";
+            return $"{Nome} {Email} {Fone} {Nascimento} {Id}";
         }
     }
 }

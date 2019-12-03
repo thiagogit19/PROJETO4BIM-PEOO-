@@ -26,13 +26,6 @@ namespace Login
         public PerfilAdministrador()
         {
             InitializeComponent();
-            ModAdm x = new ModAdm("Carlos", "Carlos@email.com", "87432164", "cara.jpeg", 123, DateTime.Parse("01/01/1997"));
-            nomeadmtxt.Text = x.GetNome().ToString();
-            emailadmtxt.Text = x.GetEmail().ToString();
-            foneadmtxt.Text = x.GetFone().ToString();
-            foto = x.GetFoto();
-            idadmtxt.Text = x.GetId().ToString();
-            nascadmtxt.Text = x.GetNascimento().ToString();
         }
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
@@ -40,7 +33,6 @@ namespace Login
             MenuAdiminstrador x = new MenuAdiminstrador();
             Close();
             x.Show();
-            
         }
     }
 }

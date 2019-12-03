@@ -19,10 +19,10 @@
                 <TextBox x:Name="gol2txt" HorizontalAlignment="Left" Height="23" Margin="176,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="19,243,0,0" TextWrapping="Wrap" Text="Local:" VerticalAlignment="Top"/>
                 <TextBox x:Name="localtxt" HorizontalAlignment="Left" Height="23" Margin="175,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="18,279,0,0" VerticalAlignment="Top" Width="100" Click="Button_Inserir"/>
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="191,279,0,0" VerticalAlignment="Top" Width="105" Click="Button_Listar"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="18,279,0,0" VerticalAlignment="Top" Width="100" />
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="191,279,0,0" VerticalAlignment="Top" Width="105" />
                 <Button Content="Voltar" HorizontalAlignment="Left" Margin="447,317,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="18,317,0,0" VerticalAlignment="Top" Width="100" Click="Button_Atualizar"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="18,317,0,0" VerticalAlignment="Top" Width="100" />
                 <Button Content="Deletar" HorizontalAlignment="Left" Margin="191,317,0,0" VerticalAlignment="Top" Width="105" />
                 <ListBox x:Name="listarpartidas" HorizontalAlignment="Left" Height="277" Margin="323,22,0,0" VerticalAlignment="Top" Width="237"/>
             </Grid>

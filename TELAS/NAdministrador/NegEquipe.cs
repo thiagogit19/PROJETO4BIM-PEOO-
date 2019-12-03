@@ -15,13 +15,16 @@ namespace NAdministrador
 
         public void InsertEquipe(ModEquipe x)
         {
+            p = new PerEquipe();
+            v = p.Open();
             v.Add(x);
+            p.Save(v);
         }
 
         public List<ModEquipe> SelectEquipe()
         {
             p = new PerEquipe();
-            return p.Open().OrderBy(ModEquipe => ModEquipe.GetID()).ToList();
+            return p.Open().OrderBy(ModEquipe => ModEquipe.Id).ToList();
         }
 
         public void UpdateEquipe(ModEquipe x)
@@ -31,7 +34,7 @@ namespace NAdministrador
 
             for (int i = 0; i < up.Count; i++)
             {
-                if (up[i].GetID() == x.GetID())
+                if (up[i].Id == x.Id)
                 {
                     up.RemoveAt(i); break;
                 }
@@ -46,7 +49,7 @@ namespace NAdministrador
             p = new PerEquipe();
             List<ModEquipe> del = p.Open();
             for (int i = 0; i < del.Count; i++)
-                if (del[i].GetID() == x.GetID())
+                if (del[i].Id == x.Id)
                 {
                     del.RemoveAt(i);
                     break;

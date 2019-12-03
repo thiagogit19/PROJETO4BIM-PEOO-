@@ -16,13 +16,19 @@ namespace NAdministrador
 
         public void InsertPresidente(ModPresidente x)
         {
-            v.Add(x);
+            p = new PerPresidente();
+            List<ModPresidente> cs = p.Open();
+            int id = 1;
+            if (cs.Count > 0) id = cs.Max(c => c.Id) + 1;
+            x.Id = id;
+            cs.Add(x);
+            p.Save(cs);
         }
 
         public List<ModPresidente> SelectPresidente()
         {
             p = new PerPresidente();
-            return p.Open().OrderBy(ModPresidente => ModPresidente.GetID()).ToList();
+            return p.Open().OrderBy(ModPresidente => ModPresidente.Id).ToList();
         }
 
         public void UpdatePresidente(ModPresidente x)
@@ -32,7 +38,7 @@ namespace NAdministrador
 
             for (int i = 0; i < up.Count; i++)
             {
-                if (up[i].GetID() == x.GetID())
+                if (up[i].Id == x.Id)
                 {
                     up.RemoveAt(i); break;
                 }
@@ -44,15 +50,13 @@ namespace NAdministrador
 
         public void DeletePresidente(ModPresidente x)
         {
-            p = new PerPresidente();
-            List<ModPresidente> del = p.Open();
-            for (int i = 0; i < del.Count; i++)
-                if (del[i].GetID() == x.GetID())
-                {
-                    del.RemoveAt(i);
-                    break;
-                }
-            p.Save(del);
+
+            ModPresidente c = new ModPresidente();
+            c.Id = int.Parse(idpretxt.Text);
+            NegPresidente n = new NegPresidente();
+            n.DeletePresidente(c);
+            listagem.ItemsSource = null;
+            listagem.ItemsSource = n.SelectPresidente();
         }
     }
 }

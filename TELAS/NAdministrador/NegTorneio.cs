@@ -15,7 +15,10 @@ namespace NAdministrador
 
         public void InsertTorneio(ModTorneio x)
         {
+            p = new PerTorneio();
+            v = p.Open();
             v.Add(x);
+            p.Save(v);
         }
 
         public void UpdateTorneio(ModTorneio x)
@@ -25,7 +28,7 @@ namespace NAdministrador
 
             for (int i = 0; i < up.Count; i++)
             {
-                if (up[i].GetPais() == x.GetPais())
+                if (up[i].Pais == x.Pais)
                 {
                     up.RemoveAt(i); break;
                 }

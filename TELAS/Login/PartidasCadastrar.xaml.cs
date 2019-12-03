@@ -34,32 +34,6 @@ namespace Login
             x.Show();
         }
 
-        private void Button_Inserir(object sender, RoutedEventArgs e)
-        {
-            ModJogo x = new ModJogo(int.Parse(id1txt.Text), int.Parse(id2txt.Text), 123, int.Parse(gol1txt.Text), int.Parse(gol2txt.Text), localtxt.Text);
-            NegPartidas y = new NegPartidas();
-            y.InsertPartida(x);
-        }
-
-        private void Button_Atualizar(object sender, RoutedEventArgs e)
-        {
-            NegPartidas y = new NegPartidas();
-            listarpartidas.ItemsSource = y.SelectPartida();
-            ModJogo x = new ModJogo(int.Parse(id1txt.Text), int.Parse(id2txt.Text), 123, int.Parse(gol1txt.Text), int.Parse(gol2txt.Text), localtxt.Text);
-            y.UpdatePartida(x);
-        }
-
-        private void Button_Listar(object sender, RoutedEventArgs e)
-        {
-            NegPartidas y = new NegPartidas();
-            listarpartidas.ItemsSource = y.SelectPartida();
-        }
-
-        private void Button_Deletar(object sender, RoutedEventArgs e)
-        {
-            ModJogo x = new ModJogo(int.Parse(id1txt.Text), int.Parse(id2txt.Text), 123, int.Parse(gol1txt.Text), int.Parse(gol2txt.Text), localtxt.Text);
-            NegPartidas y = new NegPartidas();
-            y.DeletePartida(x);
-        }
+        
     }
 }

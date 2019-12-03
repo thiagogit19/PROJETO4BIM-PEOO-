@@ -8,25 +8,9 @@ namespace Modelo
 {
     public class ModTorneio
     {
-        private int IdAdm, NUmEquipes;
-        private string Pais, Temporada;
-
-        public ModTorneio(int ida,int nume,string p,string t)
-        {
-            IdAdm = ida;
-            NUmEquipes = nume;
-            Pais = p;
-            Temporada = t;
-        }
-
-        public string GetPais()
-        {
-            return Pais;
-        }
-
-        public override string ToString()
-        {
-            return $"{IdAdm} -- {NUmEquipes} -- {Pais} -- {Temporada}";
-        }
+        public int IdAdm { get; set; }
+        public int NumEquipes { get; set; }
+        public string Pais { get; set; }
+        public string Temporada { get; set; }
     }
 }
