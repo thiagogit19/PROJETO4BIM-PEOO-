@@ -14,10 +14,21 @@ namespace Modelo
         public int Id { get; set; }
         public int IdPresidente { get; set; }
         public DateTime Fundacao { get; set; }
+        private int Gol = 0;
+
+        public void SetGol(int x)
+        {
+            Gol += x;
+        }
+
+        public int GetGoal()
+        {
+            return Gol;
+        }
 
         public override string ToString()
         {
-            return $"{Nome} {Origem} {Fundacao} {Id}";
+            return $"{Nome} {Origem} {Fundacao} {Id} {Gol}";
         }
     }
 }

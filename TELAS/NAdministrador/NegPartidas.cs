@@ -16,15 +16,18 @@ namespace NAdministrador
         public void InsertPartida(ModJogo x)
         {
             p = new PerJogo();
-            v = p.Open();
-            v.Add(x);
-            p.Save(v);
+            List<ModJogo> cs = p.Open();
+            int id = 1;
+            if (cs.Count > 0) id = cs.Max(c => c.IdPartida) + 1;
+            x.IdPartida = id;
+            cs.Add(x);
+            p.Save(cs);
         }
 
         public List<ModJogo> SelectPartida()
         {
             p = new PerJogo();
-            return p.Open().OrderBy(ModJogo => ModJogo.IdTorneio).ToList();
+            return p.Open().OrderBy(ModJogo => ModJogo.IdPartida).ToList();
         }
 
         public void UpdatePartida(ModJogo x)
@@ -34,7 +37,7 @@ namespace NAdministrador
 
             for (int i = 0; i < up.Count; i++)
             {
-                if (up[i].IdTorneio == x.IdTorneio)
+                if (up[i].IdPartida == x.IdPartida)
                 {
                     up.RemoveAt(i); break;
                 }
@@ -49,7 +52,7 @@ namespace NAdministrador
             p = new PerJogo();
             List<ModJogo> del = p.Open();
             for (int i = 0; i < del.Count; i++)
-                if (del[i].IdTorneio == x.IdTorneio)
+                if (del[i].IdPartida == x.IdPartida)
                 {
                     del.RemoveAt(i);
                     break;

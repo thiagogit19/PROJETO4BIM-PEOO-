@@ -13,7 +13,7 @@
                 <TextBox x:Name="paistxt" HorizontalAlignment="Left" Height="23" Margin="126,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="32,77,0,0" TextWrapping="Wrap" Text="Temporada:" VerticalAlignment="Top"/>
                 <TextBox x:Name="temporadatxt" HorizontalAlignment="Left" Height="23" Margin="126,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="32,122,0,0" VerticalAlignment="Top" Width="214" />
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="32,122,0,0" VerticalAlignment="Top" Width="214" Click="Button_Inserir" />
                 <Button Content="Voltar" HorizontalAlignment="Left" Margin="316,122,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
             </Grid>
         </GroupBox>

@@ -20,8 +20,8 @@ namespace NAdministrador
             int id = 1;
             if (cs.Count > 0) id = cs.Max(c => c.Id) + 1;
             x.Id = id;
-            v.Add(x);
-            p.Save(v);
+            cs.Add(x);
+            p.Save(cs);
         }
 
         public List<ModEquipe> SelectEquipe()

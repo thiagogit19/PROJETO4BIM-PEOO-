@@ -11,8 +11,13 @@ namespace Modelo
         public string Local { get; set; }
         public int IdEquipe1 { get; set; }
         public int IdEquipe2 { get; set; }
-        public int IdTorneio { get; set; }
+        public int IdPartida { get; set; }
         public int Gol1 { get; set; }
         public int Gol2 { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Local} - {IdEquipe1} - {Gol1} * {IdEquipe2} - {Gol2} -- {IdPartida}";
+        }
     }
 }
