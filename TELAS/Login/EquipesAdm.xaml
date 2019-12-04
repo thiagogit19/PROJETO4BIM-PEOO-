@@ -5,26 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="319.98" Width="634.939">
+        Title="MAVMTX" Height="686.567" Width="698.576">
     <Grid>
-        <GroupBox Header="Administrar Equipes" HorizontalAlignment="Left" Height="269" Margin="10,10,0,0" VerticalAlignment="Top" Width="607">
-            <Grid>
+        <GroupBox Header="Administrar Equipes" HorizontalAlignment="Left" Height="298" Margin="10,243,0,0" VerticalAlignment="Top" Width="607">
+            <Grid Margin="0,0,-2,-2">
                 <TextBlock HorizontalAlignment="Left" Margin="29,26,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="108,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="108,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBlock HorizontalAlignment="Left" Margin="29,134,0,0" TextWrapping="Wrap" Text="Fundação:" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="108,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="nometxt" HorizontalAlignment="Left" Height="23" Margin="108,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="origemtxt" HorizontalAlignment="Left" Height="23" Margin="108,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBlock HorizontalAlignment="Left" Margin="29,176,0,0" TextWrapping="Wrap" Text="Fundação:" VerticalAlignment="Top"/>
+                <TextBox x:Name="fundacaotxt" HorizontalAlignment="Left" Height="23" Margin="108,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="29,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="29,179,0,0" VerticalAlignment="Top" Width="75"/>
-                <DataGrid HorizontalAlignment="Left" Height="181" Margin="274,25,0,0" VerticalAlignment="Top" Width="311"/>
-                <Button Content="Listar" HorizontalAlignment="Left" Margin="153,179,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="472,217,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="29,217,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button Content="Deletar" HorizontalAlignment="Left" Margin="153,217,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="29,221,0,0" VerticalAlignment="Top" Width="75" Click="Button_Inserir"/>
+                <ListBox x:Name="listae"  HorizontalAlignment="Left" Height="216" Margin="274,25,0,0" VerticalAlignment="Top" Width="311"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="153,221,0,0" VerticalAlignment="Top" Width="75" Click="Button_Listar"/>
+                <Button Content="Voltar" HorizontalAlignment="Left" Margin="472,248,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
+                <TextBlock HorizontalAlignment="Left" Margin="29,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Origem"/><Run Text=":"/></TextBlock>
+                <TextBox x:Name="origemtxt_Copy" HorizontalAlignment="Left" Height="23" Margin="108,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBlock HorizontalAlignment="Left" Margin="29,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Id "/><Run Text="p"/><Run Text="residente:"/></TextBlock>
 
             </Grid>
         </GroupBox>
-        <TextBlock HorizontalAlignment="Left" Margin="44,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Origem"/><Run Text=":"/></TextBlock>
+        <GroupBox Header="Lista de Presidentes" HorizontalAlignment="Left" Height="228" Margin="10,10,0,0" VerticalAlignment="Top" Width="607">
+            <Grid>
+                <ListBox HorizontalAlignment="Left" Height="186" Margin="10,10,0,0" VerticalAlignment="Top" Width="575"/>
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Deletar" HorizontalAlignment="Left" Height="64" Margin="15,570,0,0" VerticalAlignment="Top" Width="321">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Margin="23,16,0,0"/>
+                <TextBox x:Name="idpretxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="80,10,0,0" RenderTransformOrigin="0.233,0.609"/>
+                <Button Content="Deletar" HorizontalAlignment="Left" Margin="223,10,0,0" VerticalAlignment="Top" Width="76" Click="Button_Deletar"/>
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Atualizar" HorizontalAlignment="Left" Height="64" Margin="360,570,0,0" VerticalAlignment="Top" Width="321">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Margin="23,16,0,0"/>
+                <TextBox x:Name="idpretxt2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="68,11,0,0" RenderTransformOrigin="0.233,0.609"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="206,11,0,0" Click="Button_Atualizar"/>
+
+
+            </Grid>
+        </GroupBox>
 
 
     </Grid>

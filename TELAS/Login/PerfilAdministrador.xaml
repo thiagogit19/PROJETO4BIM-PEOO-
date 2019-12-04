@@ -11,16 +11,15 @@
             <Grid>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Margin="11,12,0,0" Height="23" Width="64" FontSize="14"/>
                 <TextBox x:Name="nomeadmtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,12,0,0" IsReadOnly="True"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top" Margin="11,99,0,0" Height="23" Width="80" FontSize="14"/>
-                <TextBox x:Name="nascadmtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,99,0,0" IsReadOnly="True"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Margin="10,55,0,0" Height="23" Width="65" FontSize="14"/>
-                <TextBox x:Name="emailadmtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,55,0,0" IsReadOnly="True"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fone:" VerticalAlignment="Top" Margin="11,142,0,0" Height="23" Width="40" FontSize="14"/>
-                <TextBox x:Name="foneadmtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,142,0,0" IsReadOnly="True"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top" Margin="11,118,0,0" Height="23" Width="80" FontSize="14"/>
+                <TextBox x:Name="nascadmtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,118,0,0" IsReadOnly="True"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Margin="10,63,0,0" Height="23" Width="65" FontSize="14"/>
+                <TextBox x:Name="emailadmtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,63,0,0" IsReadOnly="True"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fone:" VerticalAlignment="Top" Margin="11,175,0,0" Height="23" Width="40" FontSize="14"/>
+                <TextBox x:Name="foneadmtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,175,0,0" IsReadOnly="True"/>
                 <Button Content="Voltar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="11,227,0,0" Background="#FFFCBAFF" Click="Button_Voltar"/>
                 <Image x:Name="fotoadm" HorizontalAlignment="Left" Height="144" VerticalAlignment="Top" Width="144" Margin="307,21,0,0"/>
-                <TextBlock HorizontalAlignment="Left" Margin="11,188,0,0" TextWrapping="Wrap" Text="Id:" VerticalAlignment="Top"/>
-                <TextBox x:Name="idadmtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" Margin="109,186,0,0" IsReadOnly="True"/>
+                <Image Margin="307,34,35,96" Source="administrador.jpg" Stretch="Fill"/>
 
             </Grid>
         </GroupBox>

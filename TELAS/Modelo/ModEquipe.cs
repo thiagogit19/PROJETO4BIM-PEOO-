@@ -13,7 +13,11 @@ namespace Modelo
         public int NumJogador { get; set; }
         public int Id { get; set; }
         public int IdPresidente { get; set; }
-        public int IdTorneio { get; set; }
         public DateTime Fundacao { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Nome} {Origem} {Fundacao} {Id}";
+        }
     }
 }

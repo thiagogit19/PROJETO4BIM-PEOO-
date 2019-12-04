@@ -16,7 +16,10 @@ namespace NAdministrador
         public void InsertEquipe(ModEquipe x)
         {
             p = new PerEquipe();
-            v = p.Open();
+            List<ModEquipe> cs = p.Open();
+            int id = 1;
+            if (cs.Count > 0) id = cs.Max(c => c.Id) + 1;
+            x.Id = id;
             v.Add(x);
             p.Save(v);
         }

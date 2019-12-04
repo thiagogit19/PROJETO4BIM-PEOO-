@@ -106,6 +106,15 @@ namespace Login
             NegPresidente n = new NegPresidente();
             n.UpdatePresidente(x);
 
+            nomepretxt.Text = "";
+            emailpretxt.Text = "";
+            fonepretxt.Text = "";
+            senha.Password = "";
+            confsenha.Password = "";
+            foto = string.Empty;
+            idpretxt.Text = "";
+            nascpretxt.Text = "";
+
             SelectClick(sender, e);
         }
 
@@ -117,6 +126,15 @@ namespace Login
             n.DeletePresidente(c);
             listapre.ItemsSource = null;
             listapre.ItemsSource = n.SelectPresidente();
+
+            nomepretxt.Text = "";
+            emailpretxt.Text = "";
+            fonepretxt.Text = "";
+            senha.Password = "";
+            confsenha.Password = "";
+            foto = string.Empty;
+            idpretxt.Text = "";
+            nascpretxt.Text = "";
         }
 
     }

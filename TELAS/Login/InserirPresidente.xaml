@@ -19,11 +19,10 @@
                 <TextBlock HorizontalAlignment="Left" Margin="10,171,0,0" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top"/>
                 <TextBox x:Name="nascpretxt" HorizontalAlignment="Left" Height="23" Margin="119,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" Width="98" Click="Insert_Presidente"/>
-                <ListBox x:Name="listarequipes" HorizontalAlignment="Left" Height="160" Margin="278,191,0,0" VerticalAlignment="Top" Width="259"/>
                 <Button Content="Voltar" HorizontalAlignment="Left" Margin="424,363,0,13" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="126,331,0,0" VerticalAlignment="Top" Width="113" Click="Button_Listar"/>
-                <Image x:Name="image" HorizontalAlignment="Left" Height="115" Margin="358,12,0,0" VerticalAlignment="Top" Width="130"/>
-                <Button Content="Escolher foto" HorizontalAlignment="Left" Margin="381,141,0,0" VerticalAlignment="Top" Width="75" Click="FotoClick"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Height="251" Margin="325,36,0,0" VerticalAlignment="Top" Width="178"/>
+                <Button Content="Escolher foto" HorizontalAlignment="Left" Margin="377,331,0,0" VerticalAlignment="Top" Width="75" Click="FotoClick"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,222,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top"/>
                 <PasswordBox x:Name="senha" HorizontalAlignment="Left" Height="23" Margin="119,215,0,0"  VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,271,0,0" TextWrapping="Wrap" Text="Conf. Senha:" VerticalAlignment="Top"/>

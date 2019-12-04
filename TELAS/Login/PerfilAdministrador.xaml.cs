@@ -26,6 +26,12 @@ namespace Login
         public PerfilAdministrador()
         {
             InitializeComponent();
+
+            ModAdm X = new ModAdm();
+            nomeadmtxt.Text = X.Nome;
+            foneadmtxt.Text = X.Fone;
+            emailadmtxt.Text = X.Email;
+            nascadmtxt.Text = X.Nascimento.ToString();
         }
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
