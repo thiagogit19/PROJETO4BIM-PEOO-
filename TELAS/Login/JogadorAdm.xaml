@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="1283.236" Width="1252.84">
+        Title="MAVMTX" Height="803.236" Width="1252.84">
     <Grid>
-        <GroupBox Header="Inserir Jogador" HorizontalAlignment="Left" Height="364" Margin="626,10,0,0" VerticalAlignment="Top" Width="590">
+        <GroupBox Header="Inserir Jogador" HorizontalAlignment="Left" Height="412" Margin="626,10,0,0" VerticalAlignment="Top" Width="590">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" Margin="23,26,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top"/>
                 <TextBox x:Name="nometxt" HorizontalAlignment="Left" Height="23" Margin="166,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
@@ -19,15 +19,19 @@
                 <TextBox x:Name="numcatxt" HorizontalAlignment="Left" Height="23" Margin="164,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="23,209,0,0" TextWrapping="Wrap" Text="Posição:" VerticalAlignment="Top"/>
                 <TextBox x:Name="posicaotxt" HorizontalAlignment="Left" Height="23" Margin="164,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" Margin="23,301,0,0" VerticalAlignment="Top" Width="263" Click="Button_Inserir"/>
-
-
-                <DataGrid HorizontalAlignment="Left" Height="304" Margin="317,24,0,0" VerticalAlignment="Top" Width="251"/>
-
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="30,350,0,0" VerticalAlignment="Top" Width="102" Click="Button_Inserir"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Height="251" Margin="352,36,0,0" VerticalAlignment="Top" Width="178"/>
+                <Button Content="Escolher foto" HorizontalAlignment="Left" Margin="405,350,0,0" VerticalAlignment="Top" Width="74" Click="FotoClick"/>
                 <TextBlock HorizontalAlignment="Left" Margin="23,137,0,0" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top"/>
                 <TextBox x:Name="nasctxt" HorizontalAlignment="Left" Height="23" Margin="164,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBlock HorizontalAlignment="Left" Margin="23,248,0,0" TextWrapping="Wrap" Text="Time (ID):" VerticalAlignment="Top"/>
-                <TextBox x:Name="posicaotxt_Copy" HorizontalAlignment="Left" Height="23" Margin="164,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBlock HorizontalAlignment="Left" Margin="23,248,0,0" TextWrapping="Wrap" Text="Equipe (ID):" VerticalAlignment="Top"/>
+                <TextBox x:Name="idtimetxt" HorizontalAlignment="Left" Height="23" Margin="164,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="173,350,0,0" VerticalAlignment="Top" Width="122" Click="Button_SelectClick"/>
+                <TextBlock HorizontalAlignment="Left" Margin="23,276,0,0" TextWrapping="Wrap" Text="Senha:" VerticalAlignment="Top"/>
+                
+                <TextBlock HorizontalAlignment="Left" Margin="23,311,0,0" TextWrapping="Wrap" Text="Conf. Senha:" VerticalAlignment="Top"/>
+                <PasswordBox x:Name="senhatxt"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,281,0,0" Width="120"/>
+                <PasswordBox x:Name="confsenhatxt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,309,0,0" Width="120"/>
 
             </Grid>
         </GroupBox>
@@ -39,48 +43,26 @@
             </Grid>
         </GroupBox>
 
-        <GroupBox Header="Deletar jogadores" HorizontalAlignment="Left" Height="388" VerticalAlignment="Top" Width="598" Margin="626,846,0,0">
+        <GroupBox Header="Deletar" HorizontalAlignment="Left" Height="64" Margin="10,422,0,0" VerticalAlignment="Top" Width="322">
             <Grid>
-                <DataGrid HorizontalAlignment="Left" Height="212" Margin="35,74,0,0" VerticalAlignment="Top" Width="531"/>
-                <TextBlock HorizontalAlignment="Left" Margin="35,29,0,0" TextWrapping="Wrap" Text="Time (ID):" VerticalAlignment="Top"/>
-                <TextBox x:Name="posicaotxt_Copy1" HorizontalAlignment="Left" Height="23" Margin="176,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Listar jogadores" HorizontalAlignment="Left" Margin="360,29,0,0" VerticalAlignment="Top" Width="122"/>
-                <Button Content="Deletar" HorizontalAlignment="Left" Margin="444,310,0,0" VerticalAlignment="Top" Width="122"/>
-
-            </Grid>
-        </GroupBox>
-        <GroupBox Header="Listar jogadores" HorizontalAlignment="Left" Height="388" VerticalAlignment="Top" Width="598" Margin="17,846,0,0">
-            <Grid>
-                <DataGrid HorizontalAlignment="Left" Height="212" Margin="35,74,0,0" VerticalAlignment="Top" Width="531"/>
-                <TextBlock HorizontalAlignment="Left" Margin="35,29,0,0" TextWrapping="Wrap" Text="Time (ID):" VerticalAlignment="Top"/>
-                <TextBox x:Name="posicaotxt_Copy2" HorizontalAlignment="Left" Height="23" Margin="176,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Listar jogadores" HorizontalAlignment="Left" Margin="360,29,0,0" VerticalAlignment="Top" Width="122"/>
-            </Grid>
-        </GroupBox>
-        <GroupBox Header="Atualizar Jogador" HorizontalAlignment="Left" Height="388" Margin="10,430,0,0" VerticalAlignment="Top" Width="590">
-            <Grid>
-                <TextBlock HorizontalAlignment="Left" Margin="23,26,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top"/>
-                <TextBox x:Name="nometxt1" HorizontalAlignment="Left" Height="23" Margin="166,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBlock HorizontalAlignment="Left" Margin="23,60,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top"/>
-                <TextBox x:Name="emailtxt1" HorizontalAlignment="Left" Height="23" Margin="166,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBlock HorizontalAlignment="Left" Margin="23,100,0,0" TextWrapping="Wrap" Text="Fone:" VerticalAlignment="Top"/>
-                <TextBox x:Name="fonetxt1" HorizontalAlignment="Left" Height="23" Margin="164,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBlock HorizontalAlignment="Left" Margin="23,171,0,0" TextWrapping="Wrap" Text="Número da camisa:" VerticalAlignment="Top"/>
-                <TextBox x:Name="numcatxt1" HorizontalAlignment="Left" Height="23" Margin="164,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBlock HorizontalAlignment="Left" Margin="23,209,0,0" TextWrapping="Wrap" Text="Posição:" VerticalAlignment="Top"/>
-                <TextBox x:Name="posicaotxt1" HorizontalAlignment="Left" Height="23" Margin="164,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <Button Content="Voltar" HorizontalAlignment="Left" Margin="712,60,-502,0" VerticalAlignment="Top" Width="368" Background="#FFFCBAFF" Click="Button_Voltar" Height="93" FontSize="24"/>
-                <DataGrid HorizontalAlignment="Left" Height="304" Margin="317,24,0,0" VerticalAlignment="Top" Width="251"/>
-                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="23,304,0,0" VerticalAlignment="Top" Width="261" RenderTransformOrigin="0.353,0.717" Height="29"/>
-                <TextBlock HorizontalAlignment="Left" Margin="23,137,0,0" TextWrapping="Wrap" Text="Nascimento:" VerticalAlignment="Top"/>
-                <TextBox x:Name="nasctxt1" HorizontalAlignment="Left" Height="23" Margin="164,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-                <TextBlock HorizontalAlignment="Left" Margin="23,248,0,0" TextWrapping="Wrap" Text="Time (ID):" VerticalAlignment="Top"/>
-                <TextBox x:Name="posicaotxt_Copy3" HorizontalAlignment="Left" Height="23" Margin="164,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Margin="23,16,0,0"/>
+                <TextBox x:Name="idpretxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="80,10,0,0" RenderTransformOrigin="0.233,0.609"/>
+                <Button Content="Deletar" HorizontalAlignment="Left" Margin="223,10,0,0" VerticalAlignment="Top" Width="76" Click="Button_Deletar"/>
 
             </Grid>
         </GroupBox>
 
+        <GroupBox Header="Listar jogadores" HorizontalAlignment="Left" Height="244" Margin="10,490,0,0" VerticalAlignment="Top" Width="666">
+            <DataGrid x:Name="listapre" HorizontalAlignment="Left" Height="207" Margin="10,10,0,0" VerticalAlignment="Top" Width="628"/>
+        </GroupBox>
 
-
+        <GroupBox Header="Atualizar" HorizontalAlignment="Left" Height="64" Margin="356,422,0,0" VerticalAlignment="Top" Width="320">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Margin="23,16,0,0"/>
+                <TextBox x:Name="idpretxt2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="68,11,0,0" RenderTransformOrigin="0.233,0.609"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="206,11,0,0" Click="Button_Atualizar"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="Voltar" HorizontalAlignment="Left" Margin="856,600,0,116" Width="234" Background="#FFFCBAFF" Click="Button_Voltar"/>
     </Grid>
 </Window>

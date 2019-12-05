@@ -22,10 +22,10 @@
                 <Button Content="Inserir" HorizontalAlignment="Left" Margin="18,279,0,0" VerticalAlignment="Top" Width="100" Click="Button_Inserir" />
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="191,279,0,0" VerticalAlignment="Top" Width="105" Click="Button_Listar" />
                 <Button Content="Voltar" HorizontalAlignment="Left" Margin="593,317,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
-                <ListBox x:Name="listarpartidas" HorizontalAlignment="Left" Height="277" Margin="347,20,0,0" VerticalAlignment="Top" Width="359"/>
+                <DataGrid x:Name="listarpartidas" HorizontalAlignment="Left" Height="277" Margin="347,20,0,0" VerticalAlignment="Top" Width="359"/>
             </Grid>
         </GroupBox>
-        <ListBox x:Name="listarequipes" HorizontalAlignment="Left" Height="277" Margin="39,79,0,0" VerticalAlignment="Top" Width="237"/>
+        <DataGrid x:Name="listarequipes" HorizontalAlignment="Left" Height="277" Margin="39,79,0,0" VerticalAlignment="Top" Width="237"/>
         <TextBlock Text="Lista de equipes" HorizontalAlignment="Left" Margin="39,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" FontSize="18"/>
         <GroupBox Header="Deletar" HorizontalAlignment="Left" Height="64" Margin="339,422,0,0" VerticalAlignment="Top" Width="321">
             <Grid>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="686.567" Width="698.576">
+        Title="MAVMTX" Height="686.567" Width="712.038">
     <Grid>
         <GroupBox Header="Administrar Equipes" HorizontalAlignment="Left" Height="298" Margin="10,243,0,0" VerticalAlignment="Top" Width="607">
             <Grid Margin="0,0,-2,-2">
@@ -16,18 +16,18 @@
                 <TextBox x:Name="fundacaotxt" HorizontalAlignment="Left" Height="23" Margin="108,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="29,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
                 <Button Content="Inserir" HorizontalAlignment="Left" Margin="29,221,0,0" VerticalAlignment="Top" Width="75" Click="Button_Inserir"/>
-                <ListBox x:Name="listae"  HorizontalAlignment="Left" Height="216" Margin="274,25,0,0" VerticalAlignment="Top" Width="311"/>
+                <DataGrid x:Name="listae"  HorizontalAlignment="Left" Height="216" Margin="274,25,0,0" VerticalAlignment="Top" Width="311"/>
                 <Button Content="Listar" HorizontalAlignment="Left" Margin="153,221,0,0" VerticalAlignment="Top" Width="75" Click="Button_Listar"/>
                 <Button Content="Voltar" HorizontalAlignment="Left" Margin="472,248,0,0" VerticalAlignment="Top" Width="113" Background="#FFFCBAFF" Click="Button_Voltar"/>
                 <TextBlock HorizontalAlignment="Left" Margin="29,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Origem"/><Run Text=":"/></TextBlock>
-                <TextBox x:Name="origemtxt_Copy" HorizontalAlignment="Left" Height="23" Margin="108,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="idprestxt" HorizontalAlignment="Left" Height="23" Margin="108,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="29,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Id "/><Run Text="p"/><Run Text="residente:"/></TextBlock>
 
             </Grid>
         </GroupBox>
         <GroupBox Header="Lista de Presidentes" HorizontalAlignment="Left" Height="228" Margin="10,10,0,0" VerticalAlignment="Top" Width="607">
             <Grid>
-                <ListBox HorizontalAlignment="Left" Height="186" Margin="10,10,0,0" VerticalAlignment="Top" Width="575"/>
+                <DataGrid x:Name="listapres" HorizontalAlignment="Left" Height="186" Margin="10,10,0,0" VerticalAlignment="Top" Width="575"/>
 
             </Grid>
         </GroupBox>

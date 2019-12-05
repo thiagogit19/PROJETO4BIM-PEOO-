@@ -43,11 +43,8 @@ namespace Login
         private void Button_Inserir(object sender, RoutedEventArgs e)
         {
             ModJogo x = new ModJogo();
-            ModEquipe E1 = new ModEquipe();
-            ModEquipe E2 = new ModEquipe();
-            x.IdEquipe1 = int.Parse(id1txt.Text);
-            x.IdEquipe2 = int.Parse(id2txt.Text);
-            E1.SetGol(int.Parse(gol1txt.Text));
+            NegEquipe eq = new NegEquipe();
+            
 
             x.Gol1 = int.Parse(gol1txt.Text);
             x.Gol2 = int.Parse(gol2txt.Text);

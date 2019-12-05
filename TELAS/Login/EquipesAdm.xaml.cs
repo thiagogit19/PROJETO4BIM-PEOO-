@@ -24,6 +24,9 @@ namespace Login
         public EquipesAdm()
         {
             InitializeComponent();
+            NegPresidente x = new NegPresidente();
+            listapres.ItemsSource = null;
+            listapres.ItemsSource = x.SelectPresidente();
         }
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
@@ -46,6 +49,7 @@ namespace Login
             x.Nome = nometxt.Text;
             x.Origem = origemtxt.Text;
             x.Fundacao = DateTime.Parse(fundacaotxt.Text);
+            x.IdPresidente = int.Parse(idprestxt.Text);
             NegEquipe y = new NegEquipe();
             y.InsertEquipe(x);
             nometxt.Text = "";

@@ -41,7 +41,7 @@
         </GroupBox>
 
         <GroupBox Header="Listar Presidentes" HorizontalAlignment="Left" Height="243" Margin="10,514,0,0" VerticalAlignment="Top" Width="559">
-            <ListBox x:Name="listapre" HorizontalAlignment="Left" Height="207" Margin="10,10,0,0" VerticalAlignment="Top" Width="530"/>
+            <DataGrid x:Name="listapre" HorizontalAlignment="Left" Height="207" Margin="10,10,0,0" VerticalAlignment="Top" Width="530"/>
         </GroupBox>
         <GroupBox Header="Atualizar" HorizontalAlignment="Left" Height="64" Margin="355,445,0,0" VerticalAlignment="Top" Width="321">
             <Grid>

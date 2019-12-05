@@ -24,6 +24,11 @@ namespace NAdministrador
             p.Save(cs);
         }
 
+        public int RetMax()
+        {
+            return v.Count;
+        }
+
         public List<ModEquipe> SelectEquipe()
         {
             p = new PerEquipe();
