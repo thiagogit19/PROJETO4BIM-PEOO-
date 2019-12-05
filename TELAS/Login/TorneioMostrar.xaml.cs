@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
+
 
 namespace Login
 {
@@ -19,9 +21,19 @@ namespace Login
     /// </summary>
     public partial class TorneioMostrar : Window
     {
+        ModAdm a;
+        PerTorneio t;
         public TorneioMostrar()
         {
             InitializeComponent();
+            a = new ModAdm();
+            admtxt.Text = a.Nome;
+            t = new PerTorneio();
+            t.Open();
+
+            ModTorneio z = new ModTorneio();
+            paistxt.Text = z.Pais;
+            temptxt.Text = z.Temporada;
         }
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
