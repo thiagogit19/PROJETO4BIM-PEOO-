@@ -25,9 +25,6 @@ namespace Login
         public MainWindow()
         {
             InitializeComponent();
-            ModAdm x = new ModAdm();
-            NegUsuario y = new NegUsuario();
-            y.InsertUsuario(x);
         }
 
         public string Usuario { get => usuariotxt.Text; }
@@ -38,12 +35,11 @@ namespace Login
             ModUsuario m = new ModUsuario();
             m.Email = usuariotxt.Text;
             m.Senha = txtSenha.Password;
-            m.Operacao = int.Parse(op.Text);
             NegUsuario n = new NegUsuario();
-
-            if (n.VerificarSenha(m.Email, m.Senha) == true)
+            m = n.VerificarSenha(m.Email, m.Senha);
+            if (m != null)
             {
-                if (m.Operacao == 1) // Adm
+                if (m is ModAdm) // Adm
                 {
                     MessageBox.Show("Login efetuado com sucesso");
                     MenuAdiminstrador x = new MenuAdiminstrador();
@@ -51,7 +47,7 @@ namespace Login
                     x.Show();
                 }
 
-                else if (m.Operacao == 2) // jog
+                else if (m is ModJogador) // jog
                 {
                     MessageBox.Show("Login efetuado com sucesso");
                     MenuJogador x = new MenuJogador();
@@ -59,10 +55,10 @@ namespace Login
                     x.Show();
                 }
 
-                else if (m.Operacao == 3) // pre
+                else if (m is ModPresidente) // pre
                 {
                     MessageBox.Show("Login efetuado com sucesso");
-                    MenuPresidente x = new MenuPresidente();
+                    MenuPresidente x = new MenuPresidente(m);
                     PerfilPresidente p = new PerfilPresidente(m);
                     Close();
                     x.Show();

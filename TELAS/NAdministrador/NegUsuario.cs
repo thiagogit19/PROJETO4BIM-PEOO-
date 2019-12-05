@@ -30,17 +30,18 @@ namespace NAdministrador
             return p.Open().ToList();
         }
 
-        public bool VerificarSenha(string usuario, string senha)
+        public ModUsuario VerificarSenha(string usuario, string senha)
         {
-            int x = v.Count;
-            bool r = false;
-            
+            p = new PerUsuario();
+            v = p.Open();
+            ModUsuario r = null;
 
-            for (int i = 0; i < x; i++)
+            for (int i = 0; i < v.Count; i++)
             {
                 if (usuario == v[i].Email && senha == v[i].Senha)
                 {
-                    r = true;
+                    r = v[i];
+                    break;
                 }
             }
             return r;

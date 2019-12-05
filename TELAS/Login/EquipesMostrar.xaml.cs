@@ -26,9 +26,7 @@ namespace Login
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
-            MenuPresidente x = new MenuPresidente();
             Close();
-            x.Show();
         }
     }
 }

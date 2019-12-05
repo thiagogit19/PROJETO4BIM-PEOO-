@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
 
 namespace Login
 {
@@ -19,9 +20,11 @@ namespace Login
     /// </summary>
     public partial class MenuPresidente : Window
     {
-        public MenuPresidente()
+        ModPresidente p;
+        public MenuPresidente(ModUsuario m)
         {
             InitializeComponent();
+            p = m as ModPresidente;
         }
 
         public bool pre = false;
@@ -29,7 +32,7 @@ namespace Login
 
         private void Button_Perfil(object sender, RoutedEventArgs e)
         {
-            PerfilPresidente x = new PerfilPresidente();
+            PerfilPresidente x = new PerfilPresidente(p);
             Close();
             x.Show();
         }

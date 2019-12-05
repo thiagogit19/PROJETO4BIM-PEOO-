@@ -19,6 +19,5 @@ namespace Modelo
         public int Id { get; set; }
         public DateTime Nascimento { get; set; }
         public string Senha { get; set; }
-        public int Operacao { get; set; }
     }
 }
