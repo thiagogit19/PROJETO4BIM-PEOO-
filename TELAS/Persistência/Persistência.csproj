@@ -46,6 +46,7 @@
     <Compile Include="PerJogo.cs" />
     <Compile Include="PerPresidente.cs" />
     <Compile Include="PerTorneio.cs" />
+    <Compile Include="PerUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

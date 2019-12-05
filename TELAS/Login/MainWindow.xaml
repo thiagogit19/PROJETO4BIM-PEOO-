@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MAVMTX" Height="210" Width="340">
+        Title="MAVMTX" Height="238.235" Width="340">
     <Grid>
-        <GroupBox Header="Login" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="308" Margin="10,10,0,0">
+        <GroupBox Header="Login" HorizontalAlignment="Left" Height="187" VerticalAlignment="Top" Width="308" Margin="10,10,0,0">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,10,0,0" Width="120" Height="23" FontSize="14"><Run Text="Usuário"/><Run Text=":"/></TextBlock>
-                <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="156,10,0,0"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,50,0,0" Width="120" Height="23" FontSize="14"><Run Text="Senha"/><Run Text=":"/></TextBlock>
-                <PasswordBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="120" Margin="156,50,0,0"/>
-                <Button Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="10,96,0,0" Height="24" Click="Button_Login"/>
+                <TextBox x:Name="usuariotxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="156,10,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,48,0,0" Width="120" Height="23" FontSize="14"><Run Text="Senha"/><Run Text=":"/></TextBlock>
+                <PasswordBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="120" Margin="156,48,0,0"/>
+                <Button Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="10,121,0,0" Height="24" Click="Button_Login"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,84,0,0" Width="120" Height="23" FontSize="14"><Run Text="Operação"/><Run Text=":"/></TextBlock>
+                <TextBox x:Name="op" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="120" Margin="156,84,0,0"/>
             </Grid>
         </GroupBox>
     </Grid>

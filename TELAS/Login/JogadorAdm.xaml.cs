@@ -60,7 +60,7 @@ namespace Login
                 numcatxt.Text = "";
                 confsenhatxt.Password = "";
                 foto = string.Empty;
-                idpretxt.Text = "";
+                idtimetxt.Text = "";
                 nasctxt.Text = "";
             }
             else
@@ -99,7 +99,7 @@ namespace Login
         private void Button_Deletar(object sender, RoutedEventArgs e)
         {
             ModJogador c = new ModJogador();
-            c.Id = int.Parse(idpretxt.Text);
+            c.Id = int.Parse(idjogtxt.Text);
             NegJogador n = new NegJogador();
             n.DeleteJogador(c);
             listapre.ItemsSource = null;
@@ -113,7 +113,31 @@ namespace Login
             numcatxt.Text = "";
             confsenhatxt.Password = "";
             foto = string.Empty;
-            idpretxt.Text = "";
+            idjogtxt.Text = "";
+            nasctxt.Text = "";
+        }
+
+        private void Button_Atualizar(object sender, RoutedEventArgs e)
+        {
+            ModJogador x = new ModJogador();
+            x.Id = int.Parse(idjogtxt2.Text);
+            x.Nome = nometxt.Text;
+            x.Fone = fonetxt.Text;
+            x.Email = emailtxt.Text;
+            x.NumCamisa = int.Parse(numcatxt.Text);
+            x.Fone = fonetxt.Text;
+            x.Nascimento = DateTime.Parse(nasctxt.Text);
+            NegJogador n = new NegJogador();
+            n.UpdateJogador(x);
+            nometxt.Text = "";
+            emailtxt.Text = "";
+            fonetxt.Text = "";
+            senhatxt.Password = "";
+            posicaotxt.Text = "";
+            numcatxt.Text = "";
+            confsenhatxt.Password = "";
+            foto = string.Empty;
+            idjogtxt2.Text = "";
             nasctxt.Text = "";
         }
     }

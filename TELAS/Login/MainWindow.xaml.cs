@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Modelo;
+using NAdministrador;
 
 namespace Login
 {
@@ -23,38 +25,53 @@ namespace Login
         public MainWindow()
         {
             InitializeComponent();
+            ModAdm x = new ModAdm();
+            NegUsuario y = new NegUsuario();
+            y.InsertUsuario(x);
         }
 
-        public string Usuario { get => txtNome.Text; }
+        public string Usuario { get => usuariotxt.Text; }
         public string Senha { get => txtSenha.Password; }
 
         private void Button_Login(object sender, RoutedEventArgs e)
         {
-            if (txtNome.Text == "Adm" && txtSenha.Password == "1234")
+            ModUsuario m = new ModUsuario();
+            m.Email = usuariotxt.Text;
+            m.Senha = txtSenha.Password;
+            m.Operacao = int.Parse(op.Text);
+            NegUsuario n = new NegUsuario();
+
+            if (n.VerificarSenha(m.Email, m.Senha) == true)
             {
-                MessageBox.Show("Login efetuado com sucesso");
-                MenuAdiminstrador x = new MenuAdiminstrador();
-                Close();
-                x.Show();
+                if (m.Operacao == 1) // Adm
+                {
+                    MessageBox.Show("Login efetuado com sucesso");
+                    MenuAdiminstrador x = new MenuAdiminstrador();
+                    Close();
+                    x.Show();
+                }
+
+                else if (m.Operacao == 2) // jog
+                {
+                    MessageBox.Show("Login efetuado com sucesso");
+                    MenuJogador x = new MenuJogador();
+                    Close();
+                    x.Show();
+                }
+
+                else if (m.Operacao == 3) // pre
+                {
+                    MessageBox.Show("Login efetuado com sucesso");
+                    MenuPresidente x = new MenuPresidente();
+                    Close();
+                    x.Show();
+                }
             }
-            else if (txtNome.Text == "Jog" && txtSenha.Password == "4321")
-            {
-                MessageBox.Show("Login efetuado com sucesso");
-                MenuJogador x = new MenuJogador();
-                Close();
-                x.Show();
-            }
-            else if (txtNome.Text == "Pre" && txtSenha.Password == "2314")
-            {
-                MessageBox.Show("Login efetuado com sucesso");
-                MenuPresidente x = new MenuPresidente();
-                Close();
-                x.Show();
-            }
+
             else
             {
                 MessageBox.Show("Usuário ou senha invalidados");
-            }
+            }   
         }
     }
 }

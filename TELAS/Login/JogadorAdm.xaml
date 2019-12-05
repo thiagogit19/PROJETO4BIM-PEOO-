@@ -46,7 +46,7 @@
         <GroupBox Header="Deletar" HorizontalAlignment="Left" Height="64" Margin="10,422,0,0" VerticalAlignment="Top" Width="322">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Margin="23,16,0,0"/>
-                <TextBox x:Name="idpretxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="80,10,0,0" RenderTransformOrigin="0.233,0.609"/>
+                <TextBox x:Name="idjogtxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="80,10,0,0" RenderTransformOrigin="0.233,0.609"/>
                 <Button Content="Deletar" HorizontalAlignment="Left" Margin="223,10,0,0" VerticalAlignment="Top" Width="76" Click="Button_Deletar"/>
 
             </Grid>
@@ -59,7 +59,7 @@
         <GroupBox Header="Atualizar" HorizontalAlignment="Left" Height="64" Margin="356,422,0,0" VerticalAlignment="Top" Width="320">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Margin="23,16,0,0"/>
-                <TextBox x:Name="idpretxt2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="68,11,0,0" RenderTransformOrigin="0.233,0.609"/>
+                <TextBox x:Name="idjogtxt2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="68,11,0,0" RenderTransformOrigin="0.233,0.609"/>
                 <Button Content="Atualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="206,11,0,0" Click="Button_Atualizar"/>
             </Grid>
         </GroupBox>
