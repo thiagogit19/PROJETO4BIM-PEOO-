@@ -26,7 +26,7 @@ namespace NAdministrador
         public List<ModJogador> SelectJogador()
         {
             p = new PerJogador();
-            return p.Open().OrderBy(ModJogador => ModJogador.Id).ToList(); // artilheiro
+            return p.Open().OrderBy(ModJogador => ModJogador.Id).ToList(); 
         }
 
         public void UpdateJogador(ModJogador x)
@@ -57,5 +57,7 @@ namespace NAdministrador
                 }
             p.Save(del);
         }
+
+        
     }
 }

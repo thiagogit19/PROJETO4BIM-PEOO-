@@ -38,7 +38,7 @@
 
         <GroupBox Header="Lista de equipes" HorizontalAlignment="Left" Height="387" VerticalAlignment="Top" Width="597" Margin="10,10,0,0">
             <Grid>
-                <DataGrid HorizontalAlignment="Left" Height="304" Margin="26,25,0,0" VerticalAlignment="Top" Width="531"/>
+                <DataGrid x:Name="list" HorizontalAlignment="Left" Height="304" Margin="26,25,0,0" VerticalAlignment="Top" Width="531"/>
 
             </Grid>
         </GroupBox>

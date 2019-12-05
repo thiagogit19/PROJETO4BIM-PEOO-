@@ -10,8 +10,7 @@
         <GroupBox Header="Menu principal - Jogador" HorizontalAlignment="Left" Height="174" VerticalAlignment="Top" Width="176" Margin="8,10,0,0">
             <Grid>
                 <Button Content="Perfil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,20,0,0" Height="29" Click="Button_Perfil"/>
-                <Button Content="Dados estatísticos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,64,0,0" Height="29" Click="Button_DadosEstatisticos"/>
-                <Button Content="Logout" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,109,0,0" Height="29" Click="Button_Logout"/>
+                <Button Content="Logout" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="8,85,0,0" Height="29" Click="Button_Logout"/>
             </Grid>
         </GroupBox>
     </Grid>

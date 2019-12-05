@@ -26,6 +26,9 @@ namespace Login
         public JogadorAdm()
         {
             InitializeComponent();
+            NegEquipe n = new NegEquipe();
+            list.ItemsSource = null;
+            list.ItemsSource = n.SelectEquipe();
         }
 
         private string foto = string.Empty;

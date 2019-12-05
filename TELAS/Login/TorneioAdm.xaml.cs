@@ -21,38 +21,23 @@ namespace Login
     /// </summary>
     public partial class TorneioAdm : Window
     {
+        ModAdm a;
+        ModPresidente p;
+        ModTorneio z;
+
         public TorneioAdm()
         {
             InitializeComponent();
-            
+            z = new ModTorneio();
+            paistxt.Text = z.Pais;
+            temporadatxt.Text = z.Temporada;
         }
-        int m = 0;
+
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
             MenuAdiminstrador x = new MenuAdiminstrador();
             Close();
             x.Show();
-        }
-
-        private void Button_Inserir(object sender, RoutedEventArgs e)
-        {
-            if (m == 0)
-            {
-                ModTorneio x = new ModTorneio();
-                x.Pais = paistxt.Text;
-                x.Temporada = temporadatxt.Text;
-
-                NegTorneio y = new NegTorneio();
-                y.InsertTorneio(x);
-
-                paistxt.Text = "";
-                temporadatxt.Text = "";
-                m++;
-            }
-            else
-            {
-                MessageBox.Show("Torneio ja cadastrado");
-            }
         }
     }
 }

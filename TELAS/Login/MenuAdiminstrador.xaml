@@ -10,13 +10,12 @@
         <GroupBox Header="Menu principal - Administrador" HorizontalAlignment="Left" Height="174" Margin="22,7,0,0" VerticalAlignment="Top" Width="365">
             <Grid>
                 <Button Content="Torneio" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="156" Click="Button_Torneio"/>
-                <Button Content="Equipes" HorizontalAlignment="Left" Margin="183,53,0,0" VerticalAlignment="Top" Width="156" Click="Button_Equipes"/>
-                <Button Content="Jogadores" HorizontalAlignment="Left" Margin="183,124,0,0" VerticalAlignment="Top" Width="156" Click="Button_Jog"/>
+                <Button Content="Equipes" HorizontalAlignment="Left" Margin="183,18,0,0" VerticalAlignment="Top" Width="156" Click="Button_Equipes"/>
+                <Button Content="Jogadores" HorizontalAlignment="Left" Margin="183,89,0,0" VerticalAlignment="Top" Width="156" Click="Button_Jog"/>
                 <Button Content="Partidas" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="156" Click="Button_Partidas"/>
-                <Button Content="Presidente" HorizontalAlignment="Left" Margin="183,89,0,0" VerticalAlignment="Top" Width="156" Click="Button_Presidentes" />
-                <Button Content="Dados estatísticos" HorizontalAlignment="Left" Margin="183,18,0,0" VerticalAlignment="Top" Width="156" Click="Button_DadosEstatisticos"/>
+                <Button Content="Presidente" HorizontalAlignment="Left" Margin="183,53,0,0" VerticalAlignment="Top" Width="156" Click="Button_Presidentes" />
                 <Button Content="Perfil" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="156" Click="Button_PerfilAdm"/>
-                <Button Content="Logout" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="156" Background="#FFDDDDDD" Click="Button_Logout"/>
+                <Button Content="Logout" HorizontalAlignment="Left" Margin="97,122,0,0" VerticalAlignment="Top" Width="156" Background="#FFDDDDDD" Click="Button_Logout"/>
             </Grid>
         </GroupBox>
     </Grid>

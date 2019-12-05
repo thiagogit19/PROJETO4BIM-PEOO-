@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
+using NAdministrador;
+//using Persistência;
 
 namespace Login
 {
@@ -19,14 +22,20 @@ namespace Login
     /// </summary>
     public partial class EquipesMostrar : Window
     {
+        NegEquipe eq;
         public EquipesMostrar()
         {
             InitializeComponent();
+            eq = new NegEquipe();
+            listequipe.ItemsSource = null;
+            listequipe.ItemsSource = eq.SelectEquipe();
         }
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
+        
     }
 }

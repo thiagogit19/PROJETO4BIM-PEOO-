@@ -10,7 +10,7 @@ namespace Modelo
     {
         public int IdAdm { get; set; }
         public int NumEquipes { get; set; }
-        public string Pais { get; set; }
-        public string Temporada { get; set; }
+        public string Pais { get => "Brasil"; }
+        public string Temporada { get => "2020"; }
     }
 }

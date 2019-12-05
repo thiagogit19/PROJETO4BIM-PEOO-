@@ -37,14 +37,6 @@ namespace Login
             x.Show();
         }
 
-        private void Button_DadosEstatisticos(object sender, RoutedEventArgs e)
-        {
-            pre = true;
-            DadosEstatísticos x = new DadosEstatísticos(pre);
-            Close();
-            x.Show();
-        }
-
         private void Button_Torneio(object sender, RoutedEventArgs e)
         {
             TorneioMostrar x = new TorneioMostrar();

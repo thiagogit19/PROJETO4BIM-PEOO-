@@ -12,7 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Modelo;
-using Persistência;
+using NAdministrador;
+//using Persistência;
 
 
 namespace Login
@@ -23,22 +24,26 @@ namespace Login
     public partial class TorneioMostrar : Window
     {
         ModAdm a;
-        PerTorneio t;
+        ModPresidente p;
+        ModTorneio z;
+
         public TorneioMostrar()
         {
             InitializeComponent();
             a = new ModAdm();
             admtxt.Text = a.Nome;
-            t = new PerTorneio();
-            t.Open();
-
-            ModTorneio z = new ModTorneio();
+            z = new ModTorneio();
             paistxt.Text = z.Pais;
             temptxt.Text = z.Temporada;
+
+            NegEquipe n = new NegEquipe();
+            numctxt.Text = n.RetMax().ToString();
         }
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            MenuPresidente x = new MenuPresidente(p);
+            Close();
+            x.Show();
         }
     }
 }

@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
+using NAdministrador;
 
 namespace Login
 {
@@ -22,11 +24,53 @@ namespace Login
         public JogadorMostrarAtualizar()
         {
             InitializeComponent();
+            NegJogador m = new NegJogador();
+            Listajogador.ItemsSource = null;
+            Listajogador.ItemsSource = m.SelectJogador();
+        }
+        private void SelectClick(object sender, RoutedEventArgs e)
+        {
+            NegJogador m = new NegJogador();
+            Listajogador.ItemsSource = null;
+            Listajogador.ItemsSource = m.SelectJogador();
         }
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Button_Atualizar(object sender, RoutedEventArgs e)
+        {
+            ModJogador x = new ModJogador();
+            x.Nome = nometxt.Text;
+            x.Nascimento = DateTime.Parse(nasctxt.Text);
+            x.Fone = fonetxt.Text;
+            x.Posicao = posicaotxt.Text;
+            x.NumCamisa = int.Parse(numcatxt.Text);
+            x.Email = emailtxt.Text;
+            x.Id = int.Parse(idjog.Text);
+
+            NegJogador y = new NegJogador();
+            y.UpdateJogador(x);
+
+            nometxt.Text = "";
+            emailtxt.Text = "";
+            fonetxt.Text = "";
+            idjog.Text = "";
+            nasctxt.Text = "";
+            posicaotxt.Text = "";
+            numcatxt.Text = "";
+
+            SelectClick(sender, e);
+
+        }
+
+        private void Button_Listar(object sender, RoutedEventArgs e)
+        {
+            NegJogador x = new NegJogador();
+            Listajogador.ItemsSource = null;
+            Listajogador.ItemsSource = x.SelectJogador();
         }
     }
 }

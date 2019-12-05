@@ -37,14 +37,6 @@ namespace Login
             x.Show();
         }
 
-        private void Button_DadosEstatisticos(object sender, RoutedEventArgs e)
-        {
-            jog = true;
-            DadosEstatísticos x = new DadosEstatísticos(jog);
-            Close();
-            x.Show();
-        }
-
         private void Button_Logout(object sender, RoutedEventArgs e)
         {
             MainWindow x = new MainWindow();

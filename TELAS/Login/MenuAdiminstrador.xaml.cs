@@ -32,7 +32,6 @@ namespace Login
         private void Button_PerfilAdm(object sender, RoutedEventArgs e)
         {
             PerfilAdministrador x = new PerfilAdministrador();
-            Close();
             x.Show();
         }
         private void Button_Torneio(object sender, RoutedEventArgs e)
@@ -56,13 +55,7 @@ namespace Login
             x.Show();
         }
 
-        private void Button_DadosEstatisticos(object sender, RoutedEventArgs e)
-        {
-            // adm = true;
-            DadosEstatísticos x = new DadosEstatísticos(adm);
-            Close();
-            x.Show();
-        }
+       
 
         private void Button_Equipes(object sender, RoutedEventArgs e)
         {

@@ -9,13 +9,13 @@
     <Grid Height="269" VerticalAlignment="Top" Margin="0,0,0,0">
         <GroupBox Header="Menu Principal - Presidente" HorizontalAlignment="Left" Margin="10,10,0,10" Width="259">
             <Grid Margin="-13,0,-2,0" Height="225" VerticalAlignment="Top">
-                <Button Content="Jogadores" HorizontalAlignment="Left" Margin="14,167,0,-4" VerticalAlignment="Top" Width="241" Click="Button_Jog"/>
-                <Button Content="Equipes do torneio" HorizontalAlignment="Left" Margin="14,108,0,0" VerticalAlignment="Top" Width="241" Click="Button_Equipes"/>
-                <Button Content="Partidas" HorizontalAlignment="Left" Margin="14,138,0,0" VerticalAlignment="Top" Width="241" Click="Button_Partidas"/>
-                <Button Content="Dados estatísticos" HorizontalAlignment="Left" Margin="14,44,0,0" VerticalAlignment="Top" Width="241" Click="Button_DadosEstatisticos"/>
+                <Button Content="Jogadores" HorizontalAlignment="Left" Margin="14,144,0,0" VerticalAlignment="Top" Width="241" Click="Button_Jog"/>
+                <Button Content="Equipes do torneio" HorizontalAlignment="Left" Margin="14,85,0,0" VerticalAlignment="Top" Width="241" Click="Button_Equipes"/>
+                <Button Content="Partidas" HorizontalAlignment="Left" Margin="14,115,0,0" VerticalAlignment="Top" Width="241" Click="Button_Partidas"/>
+
                 <Button Content="Perfil" HorizontalAlignment="Left" Margin="14,12,0,0" VerticalAlignment="Top" Width="241" Click="Button_Perfil" />
-                <Button Content="Logout" HorizontalAlignment="Left" Margin="14,196,0,-33" VerticalAlignment="Top" Width="241" Background="#FFDDDDDD" Click="Button_Logout"/>
-                <Button Content="Dados do torneio" HorizontalAlignment="Left" Margin="14,76,0,0" VerticalAlignment="Top" Width="241" Click="Button_Torneio"/>
+                <Button Content="Logout" HorizontalAlignment="Left" Margin="14,173,0,0" VerticalAlignment="Top" Width="241" Background="#FFDDDDDD" Click="Button_Logout"/>
+                <Button Content="Dados do torneio" HorizontalAlignment="Left" Margin="14,53,0,0" VerticalAlignment="Top" Width="241" Click="Button_Torneio"/>
             </Grid>
         </GroupBox>
 

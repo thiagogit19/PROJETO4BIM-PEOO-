@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using NAdministrador;
 
 namespace Login
 {
@@ -22,6 +23,10 @@ namespace Login
         public PartidasMostrar()
         {
             InitializeComponent();
+            NegPartidas p = new NegPartidas();
+            grid.ItemsSource = null;
+            grid.ItemsSource = p.SelectPartida();
+            
         }
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {

@@ -11,7 +11,6 @@ namespace Modelo
         public string Apelido { get; set; }
         public string Posicao { get; set; }
         public int NumCamisa { get; set; }
-        public int QuantGols { get; set; }
         public int IdEquipe { get; set; }
     }
 }
