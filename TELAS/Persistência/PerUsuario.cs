@@ -15,7 +15,7 @@ namespace Persistência
 
         public List<ModUsuario> Open()
         {
-            XmlSerializer x = new XmlSerializer(typeof(List<ModUsuario>));
+            XmlSerializer x = new XmlSerializer(typeof(List<ModUsuario>), new Type[] { typeof(ModAdm), typeof(ModPresidente), typeof(ModJogador) });
             StreamReader f = null;
             List<ModUsuario> list = null;
 
@@ -37,7 +37,7 @@ namespace Persistência
 
         public void Save(List<ModUsuario> g)
         {
-            XmlSerializer x = new XmlSerializer(typeof(List<ModUsuario>));
+            XmlSerializer x = new XmlSerializer(typeof(List<ModUsuario>), new Type[] {typeof(ModAdm), typeof(ModPresidente), typeof(ModJogador)});
             StreamWriter f = new StreamWriter(arquivo, false, Encoding.Default);
             x.Serialize(f, g);
             f.Close();

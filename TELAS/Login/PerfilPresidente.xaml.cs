@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
 
 namespace Login
 {
@@ -19,9 +20,11 @@ namespace Login
     /// </summary>
     public partial class PerfilPresidente : Window
     {
-        public PerfilPresidente()
+        ModPresidente p;
+        public PerfilPresidente(ModUsuario m)
         {
             InitializeComponent();
+            p = m as ModPresidente;
         }
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {

@@ -63,9 +63,11 @@ namespace Login
                 {
                     MessageBox.Show("Login efetuado com sucesso");
                     MenuPresidente x = new MenuPresidente();
+                    PerfilPresidente p = new PerfilPresidente(m);
                     Close();
                     x.Show();
                 }
+
             }
 
             else
