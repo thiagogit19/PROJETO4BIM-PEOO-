@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
 
 namespace Login
 {
@@ -19,15 +20,22 @@ namespace Login
     /// </summary>
     public partial class PerfilJogador : Window
     {
-        public PerfilJogador()
+        ModJogador j;
+        public PerfilJogador(ModUsuario m)
         {
             InitializeComponent();
+            j = m as ModJogador;
+            nomejog.Text = j.Nome;
+            emailjog.Text = j.Email;
+            fonejog.Text = j.Fone;
+            nascjog.Text = j.Nascimento.ToString();
+            apeljog.Text = j.Apelido;
+            numcjog.Text = j.NumCamisa.ToString();
+            posjog.Text = j.Posicao;
         }
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
-            MenuJogador x = new MenuJogador();
-            Close();
-            x.Show();
+            this.Close();
         }
     }
 }

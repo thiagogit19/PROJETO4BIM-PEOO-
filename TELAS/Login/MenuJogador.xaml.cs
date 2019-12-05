@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelo;
 
 namespace Login
 {
@@ -19,9 +20,11 @@ namespace Login
     /// </summary>
     public partial class MenuJogador : Window
     {
-        public MenuJogador()
+        ModJogador j;
+        public MenuJogador(ModUsuario m)
         {
             InitializeComponent();
+            j = m as ModJogador;
         }
 
 
@@ -29,7 +32,7 @@ namespace Login
         
         private void Button_Perfil(object sender, RoutedEventArgs e)
         {
-            PerfilJogador x = new PerfilJogador();
+            PerfilJogador x = new PerfilJogador(j);
             Close();
             x.Show();
         }

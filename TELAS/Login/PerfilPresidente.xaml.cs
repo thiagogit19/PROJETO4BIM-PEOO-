@@ -25,6 +25,10 @@ namespace Login
         {
             InitializeComponent();
             p = m as ModPresidente;
+            nometxt.Text = p.Nome;
+            fonetxt.Text = p.Fone;
+            emailtxt.Text = p.Email;
+            nasctxt.Text = p.Nascimento.ToString();
         }
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {

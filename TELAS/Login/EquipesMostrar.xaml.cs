@@ -26,7 +26,7 @@ namespace Login
 
         private void Button_Voltar(object sender, RoutedEventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

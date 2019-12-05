@@ -50,7 +50,7 @@ namespace Login
                 else if (m is ModJogador) // jog
                 {
                     MessageBox.Show("Login efetuado com sucesso");
-                    MenuJogador x = new MenuJogador();
+                    MenuJogador x = new MenuJogador(m);
                     Close();
                     x.Show();
                 }
