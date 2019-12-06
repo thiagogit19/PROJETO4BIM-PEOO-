@@ -29,7 +29,7 @@ namespace Login
             emailjog.Text = j.Email;
             fonejog.Text = j.Fone;
             nascjog.Text = j.Nascimento.ToString();
-            apeljog.Text = j.Apelido;
+            //apeljog.Text = j.Apelido;
             numcjog.Text = j.NumCamisa.ToString();
             posjog.Text = j.Posicao;
         }

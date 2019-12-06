@@ -8,7 +8,7 @@ namespace Modelo
 {
     public class ModJogador : ModUsuario
     {
-        public string Apelido { get; set; }
+        //public string Apelido { get; set; }
         public string Posicao { get; set; }
         public int NumCamisa { get; set; }
         public int IdEquipe { get; set; }

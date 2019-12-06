@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Modelo;
 using NAdministrador;
+using System.Security;
+using System.Security.Cryptography;
 
 namespace Login
 {
@@ -80,5 +82,8 @@ namespace Login
                 MessageBox.Show("Usuário ou senha invalidados");
             }   
         }
+
+        
+
     }
 }

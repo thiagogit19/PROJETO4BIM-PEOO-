@@ -47,21 +47,18 @@ namespace Login
         private void Button_Equipes(object sender, RoutedEventArgs e)
         {
             EquipesMostrar x = new EquipesMostrar();
-            Close();
             x.Show();
         }
 
         private void Button_Partidas(object sender, RoutedEventArgs e)
         {
             PartidasMostrar x = new PartidasMostrar();
-            Close();
             x.Show();
         }
 
         private void Button_Jog(object sender, RoutedEventArgs e)
         {
             JogadorMostrarAtualizar x = new JogadorMostrarAtualizar();
-            Close();
             x.Show();
         }
 

@@ -20,10 +20,8 @@
 
                 <GroupBox Header="Habilidade" HorizontalAlignment="Left" Height="159" VerticalAlignment="Top" Width="536" Margin="11,104,0,0">
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Número da camisa:" VerticalAlignment="Top" Margin="10,46,0,0" FontSize="14" Height="24"/>
-                        <TextBox x:Name="numcjog" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="202,47,0,0" IsReadOnly="True"/>
-                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Apelido:" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="14" Height="24" Width="56"/>
-                        <TextBox x:Name="apeljog" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="202,11,0,0" IsReadOnly="True"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Número da camisa:" VerticalAlignment="Top" Margin="10,25,0,0" FontSize="14" Height="24"/>
+                        <TextBox x:Name="numcjog" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="202,26,0,0" IsReadOnly="True"/>
                         <Image HorizontalAlignment="Left" Height="116" VerticalAlignment="Top" Width="149" Margin="350,10,0,0"/>
                         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Posição:" VerticalAlignment="Top" Margin="10,82,0,0" FontSize="14" Height="24"/>
                         <TextBox x:Name="posjog" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="202,83,0,0" IsReadOnly="True"/>

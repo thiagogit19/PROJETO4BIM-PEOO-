@@ -33,7 +33,6 @@ namespace Login
         private void Button_Perfil(object sender, RoutedEventArgs e)
         {
             PerfilJogador x = new PerfilJogador(j);
-            Close();
             x.Show();
         }
 

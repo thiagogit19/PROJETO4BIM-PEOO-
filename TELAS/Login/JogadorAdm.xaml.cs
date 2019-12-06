@@ -65,6 +65,8 @@ namespace Login
                 foto = string.Empty;
                 idtimetxt.Text = "";
                 nasctxt.Text = "";
+                NegUsuario nu = new NegUsuario();
+                nu.InsertUsuario(x);
             }
             else
             {
